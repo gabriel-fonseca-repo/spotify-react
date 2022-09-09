@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://open.spotifycdn.com/cdn/images/favicon.5cb2bd30.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/sign-up.css" />
+    <title>Registrar</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          class="logo"
+          src="../assets/svg/logo-dark.svg"
+          alt="Logo do spotify"
+        />
+        <h1 class="title">Inscreva-se grátis e comece a curtir.</h1>
+      </div>
+      <div id="line"><hr  /></div>
+      <form class="teste" action="">
+        <div class="input-group">
+          <label for="email">Qual é o seu e-mail?</label>
+          <input
+            class="text-input"
+            type="email"
+            name="email"
+            placeholder="Insira o seu e-mail."
+          />
+        </div>
+        <div class="input-group">
+          <label for="emailConfirm">Confirme seu e-mail:</label>
+          <input
+            class="text-input"
+            type="email"
+            name="emailConfirm"
+            placeholder="Insira o seu e-mail novamente."
+          />
+        </div>
+        <div class="input-group">
+          <label for="password">Crie uma senha:</label>
+          <input
+            class="text-input"
+            type="password"
+            name="password"
+            placeholder="Crie uma senha."
+          />
+        </div>
+        <div class="input-group">
+          <label for="name">Como devemos chamar você?</label>
+          <input
+            class="text-input" 
+            type="text"
+            name="name"
+            placeholder="Insira o seu nome."
+          />
+          <p class="custom-mt-5">Isso aparece no seu perfil.</p>
+        </div>
+        <div class="input-group">
+          <label for="birthdate">Qual a sua data de nascimento?</label>
+          <input
+            class="text-input"
+            type="date"
+            name="birthdate"
+            placeholder="Insira a sua data de nascimento."
+          />
+        </div>
+        <div class="input-group">
+          <label for="country">Qual o seu gênero?</label>
+          <div class="options has-text-weight-normal">
+            <span>
+              <input
+                type="radio"
+                id="man"
+                name="man"
+                value="Masculino"
+              />
+              <label for="man">Masculino</label>
+            </span>
+            <span>
+              <input
+                type="radio"
+                id="woman"
+                name="woman"
+                value="Feminino"
+              />
+              <label for="woman">Feminino</label>
+            </span>
+            <span>
+              <input
+                type="radio"
+                id="nonBinary"
+                name="nonBinary"
+                value="Não binário"
+              />
+              <label for="nonBinary">Não binário</label>
+            </span>
+          </div>
+        </div>
+        <div class="checkbox-group has-text-weight-normal">
+          <div class="checkbox">
+            <input class="block" type="checkbox" id="msg" name="msg" />
+            <label for="msg"
+              >Não quero receber mensagens de marketing do Spotify</label
+            >
+          </div>
+          <div class="checkbox">
+            <input class="block" type="checkbox" id="dados" name="dados" />
+            <label for="dados"
+              >Compartilhar meus dados cadastrais com os provedores de conteúdo
+              do Spotify para fins de marketing.</label
+            >
+          </div>
+          <div class="checkbox">
+            <input class="block" type="checkbox" id="termos" name="termos" />
+            <label for="termos"
+              >Eu concordo com os
+              <a href="">Termos e Condições de Uso do Spotify.</a></label
+            >
+          </div>
+        </div>
+        <p class="terms">
+          Para saber mais sobre como o Spotify coleta, utiliza, compartilha e
+          protege seus dados pessoais, leia a
+          <a href="">Política de Privacidade do Spotify</a>.
+        </p>
+        <span class="submit">
+          <button class="button" type="submit">Inscrever-se</button>
+          <p>Já tem uma conta? <a href="">Faça login</a>.</p>
+        </span>
+      </form>
+    </div>
+  </body>
+</html>
