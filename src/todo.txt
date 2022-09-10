@@ -11,5 +11,5 @@
         ✔--a data atual do sistema
 
 --Faq:
-    ❌--uma lista de itens clicáveis com títulos de FAQ
+    ✔--uma lista de itens clicáveis com títulos de FAQ
     ❌--Ao se clicar em um título, deveria ser mostrada a resolução para a pergunta
