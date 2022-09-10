@@ -31,7 +31,7 @@ aside {
     overflow-x: hidden;
 }
 
-main > header {
+.home_content main>header {
     position: fixed;
     top: 0;
 
@@ -58,7 +58,7 @@ main > header {
     padding: 30px;
 }
 
-.subscribe-login-container {
+.subscribe_login_container {
     color: var(--primary);
 
     display: flex;
@@ -66,12 +66,12 @@ main > header {
     gap: 30px;
 }
 
-.subscribe-button {
+.subscribe_button {
     text-decoration: none;
     color: var(--primary-opacity);
 }
 
-.login-button {
+.login_button {
     text-decoration: none;
 
     color: var(--terciary);
@@ -107,37 +107,37 @@ ul {
     margin-bottom: 25px;
 }
 
-.menu-principal {
+.menu_principal {
     margin-bottom: 20px;
 }
 
-.menu-utilitario {
+.menu_utilitario {
     margin-top: 40px;
 }
 
-.music-list-container {
+.music_list_container {
     margin-bottom: 50px;
 }
 
-.music-list-container header {
+.music_list_container header {
     display: flex;
     justify-content: space-between;
 
     margin-bottom: 20px;
 }
 
-.music-list-container header a {
+.music_list_container header a {
     text-decoration: none;
     color: var(--primary-opacity);
     font-size: 14px;
     font-weight: 600;
 }
 
-.music-list-container h3 {
+.music_list_container h3 {
     color: var(--primary);
 }
 
-.music-list {
+.music_list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -145,7 +145,7 @@ ul {
     flex-wrap: wrap;
 }
 
-.music-list-card {
+.music_list_card {
     height: 250px;
     width: 170px;
     border-radius: 10px;
@@ -160,19 +160,19 @@ ul {
     gap: 10px;
 }
 
-.music-list-card img {
+.music_list_card img {
     width: 100%;
     height: 150px;
     border-radius: 10px;
 }
 
-.music-list-card .title {
+.music_list_card .title {
     color: var(--primary);
     text-align: left;
     margin-bottom: 10px;
 }
 
-.music-list-card .detail {
+.music_list_card .detail {
     color: var(--primary);
     text-align: left;
 }
