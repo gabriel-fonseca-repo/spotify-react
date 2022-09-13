@@ -5,7 +5,7 @@ export function HeaderFaq() {
   return (
     <header>
       <div className={styles.logo_container}>
-        <Link to="/home">
+        <Link to="/">
           <img
             className={styles.logo}
             src="/assets/svg/logo.svg"
