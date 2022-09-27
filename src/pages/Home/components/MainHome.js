@@ -15,7 +15,7 @@ export function MainHome() {
           <PlaylistCardList playlists={playlists}></PlaylistCardList>
 
           <PlaylistCardList playlists={playlists}></PlaylistCardList>
-        </div>
+        </div> 
       </main>
     </div>
   );
