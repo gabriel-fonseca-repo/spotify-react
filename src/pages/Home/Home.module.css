@@ -126,7 +126,7 @@ ul {
     margin-bottom: 20px;
 }
 
-.music_list_container header a {
+.music_list_container header span {
     text-decoration: none;
     color: var(--primary-opacity);
     font-size: 14px;

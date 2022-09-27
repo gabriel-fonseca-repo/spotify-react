@@ -37,9 +37,9 @@ export function ContentFaq() {
         <div className={styles.faq_help_container}>
           <p>Como podemos ajudar?</p>
           <h1>
-            <a className={styles.faq_link_login} href="#">
+            <span className={styles.faq_link_login} href="#">
               Faça log in
-            </a>{" "}
+            </span>{" "}
             para ter ajuda mais rápido
           </h1>
         </div>
@@ -48,7 +48,7 @@ export function ContentFaq() {
             type="text"
             aria-label="Buscar"
             placeholder="🔎 Buscar"
-            autocomplete="off"
+            autoComplete="off"
             className={styles.faq_barra_de_busca}
           />
         </div>
