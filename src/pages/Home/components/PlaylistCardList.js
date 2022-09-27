@@ -3,25 +3,26 @@ import { PlaylistCard } from "./PlaylistCard";
 
 export function PlaylistCardList(props) {
   const playlists = props.playlists;
-  const playlistElements = playlists.map((playlist) => {
-    return (
-      <PlaylistCard 
-        key={playlist.index}
-        src={playlist.src}
-        alt={playlist.alt}
-        title={playlist.title}
-        detail={playlist.detail}
-      ></PlaylistCard>
-    );
-  });
+  const nomeCategoria = props.nome;
 
   return (
     <div className={styles.music_list_container}>
       <header>
-        <h3>Spotify Playlists</h3>
+        <h3>{nomeCategoria}</h3>
         <span>VER TUDO</span>
       </header>
-      <div className={styles.music_list}>{playlistElements}</div>
+      <div className={styles.music_list}>
+        {playlists.map((playlist) => (
+          <PlaylistCard
+            key={playlist.idplaylist}
+            idplaylist={playlist.idplaylist}
+            src={playlist.src}
+            alt={playlist.alt}
+            title={playlist.title}
+            detail={playlist.detail}
+          />
+        ))}
+      </div>
     </div>
   );
 }

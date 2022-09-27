@@ -1,8 +1,8 @@
+import "./global/theme.css";
 import { Home } from "./pages/Home";
 import { Faq } from "./pages/Faq";
-import "./global/theme.css";
-
 import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Playlist } from "./pages/Playlist";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/playlist/:id" element={<Playlist />}/>
       </Routes>
     </BrowserRouter>
   );

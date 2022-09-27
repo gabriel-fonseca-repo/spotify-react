@@ -3,19 +3,21 @@ import { HeaderHome } from "./HeaderHome";
 import { PlaylistCardList } from "./PlaylistCardList";
 
 export function MainHome() {
-  const playlists = require("./../../../data/playlists.json").playlists;
+  const categorias = require("../../../data/db.json").categorias;
 
   return (
     <div className={styles.home_content}>
       <main>
-        <HeaderHome></HeaderHome>
+        <HeaderHome />
         <div className={styles.content}>
-          <PlaylistCardList playlists={playlists}></PlaylistCardList>
-
-          <PlaylistCardList playlists={playlists}></PlaylistCardList>
-
-          <PlaylistCardList playlists={playlists}></PlaylistCardList>
-        </div> 
+          {categorias.map((categoria) => (
+            <PlaylistCardList
+              key={categoria.idcategoria}
+              nome={categoria.nome}
+              playlists={categoria.playlists}
+            />
+          ))}
+        </div>
       </main>
     </div>
   );
