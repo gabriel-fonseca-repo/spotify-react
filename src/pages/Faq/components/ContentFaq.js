@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "../Faq.module.css";
-import {useState} from 'react';
+import { useState } from "react";
 
 export function ContentFaq() {
-
   const [isShown, setIsShown] = useState(false);
   const [isShown1, setIsShown1] = useState(false);
   const [isShown2, setIsShown2] = useState(false);
@@ -13,20 +12,20 @@ export function ContentFaq() {
 
   function showResult(e, number) {
     e.preventDefault();
-    if(number === 0){
-      setIsShown(current => !current);
-    }else if(number === 1){
-      setIsShown1(current => !current);
-    }else if(number === 2){
-      setIsShown2(current => !current);
-    }else if(number === 3){
-      setIsShown3(current => !current);
-    }else if(number === 4){
-      setIsShown4(current => !current);
-    }else if(number === 5){
-      setIsShown5(current => !current);
+    if (number === 0) {
+      setIsShown((current) => !current);
+    } else if (number === 1) {
+      setIsShown1((current) => !current);
+    } else if (number === 2) {
+      setIsShown2((current) => !current);
+    } else if (number === 3) {
+      setIsShown3((current) => !current);
+    } else if (number === 4) {
+      setIsShown4((current) => !current);
+    } else if (number === 5) {
+      setIsShown5((current) => !current);
     }
-  };
+  }
 
   return (
     <div className={styles.content}>
@@ -142,9 +141,12 @@ export function ContentFaq() {
       <div className={styles.faq_help_section_container}>
         <h2 className={styles.faq_help_links_title}>Ajuda rápida</h2>
         <div className={styles.faq_help_links_container}>
-          <ul role="list" className={styles.faq_help_link_items_list}>
-            <li className={styles.faq_help_link_item} onClick={(event) => showResult(event, 0)}>
-              <a className={styles.faq_help_link_text}>
+          <ul className={styles.faq_help_link_items_list}>
+            <li
+              className={styles.faq_help_link_item}
+              onClick={(event) => showResult(event, 0)}
+            >
+              <a href="w" className={styles.faq_help_link_text}>
                 Não consigo redefinir a senha
               </a>
               <img
@@ -155,10 +157,14 @@ export function ContentFaq() {
             </li>
             {isShown && (
               <li className={styles.faq_help_link_item}>
-                Tente inserir qualquer outro endereço de e-mail que você possa ter usado para criar uma conta.
+                Tente inserir qualquer outro endereço de e-mail que você possa
+                ter usado para criar uma conta.
               </li>
             )}
-            <li className={styles.faq_help_link_item} onClick={(event) => showResult(event, 1)}>
+            <li
+              className={styles.faq_help_link_item}
+              onClick={(event) => showResult(event, 1)}
+            >
               <a className={styles.faq_help_link_text} href="#">
                 Tem algo errado com a minha conta
               </a>
@@ -170,10 +176,14 @@ export function ContentFaq() {
             </li>
             {isShown1 && (
               <li className={styles.faq_help_link_item}>
-                Se notar algo estranho, diferente ou corrompido, é possível que você tenha entrado em outra conta do Spotify.
+                Se notar algo estranho, diferente ou corrompido, é possível que
+                você tenha entrado em outra conta do Spotify.
               </li>
             )}
-            <li className={styles.faq_help_link_item} onClick={(event) => showResult(event, 2)}>
+            <li
+              className={styles.faq_help_link_item}
+              onClick={(event) => showResult(event, 2)}
+            >
               <a className={styles.faq_help_link_text} href="#">
                 Não lembro minhas informações de login
               </a>
@@ -185,10 +195,14 @@ export function ContentFaq() {
             </li>
             {isShown2 && (
               <li className={styles.faq_help_link_item}>
-               Se você não se lembrar da sua senha, use a página de redefinição de senha.
+                Se você não se lembrar da sua senha, use a página de redefinição
+                de senha.
               </li>
             )}
-            <li className={styles.faq_help_link_item} onClick={(event) => showResult(event, 3)}>
+            <li
+              className={styles.faq_help_link_item}
+              onClick={(event) => showResult(event, 3)}
+            >
               <a className={styles.faq_help_link_text} href="#">
                 Ajuda para entrar com o Facebook
               </a>
@@ -200,10 +214,14 @@ export function ContentFaq() {
             </li>
             {isShown3 && (
               <li className={styles.faq_help_link_item}>
-                Para entrar no Spotify com sua conta do Facebook, use essa rede social na inscrição ou faça a vinculação.
+                Para entrar no Spotify com sua conta do Facebook, use essa rede
+                social na inscrição ou faça a vinculação.
               </li>
             )}
-            <li className={styles.faq_help_link_item} onClick={(event) => showResult(event, 4)}>
+            <li
+              className={styles.faq_help_link_item}
+              onClick={(event) => showResult(event, 4)}
+            >
               <a className={styles.faq_help_link_text} href="#">
                 Formas de pagamento
               </a>
@@ -218,7 +236,10 @@ export function ContentFaq() {
                 os métodos variam de acordo com o país ou região.
               </li>
             )}
-            <li className={styles.faq_help_link_item} onClick={(event) => showResult(event, 5)}>
+            <li
+              className={styles.faq_help_link_item}
+              onClick={(event) => showResult(event, 5)}
+            >
               <a className={styles.faq_help_link_text} href="#">
                 Criar ou entrar em um plano Família
               </a>
@@ -230,7 +251,8 @@ export function ContentFaq() {
             </li>
             {isShown5 && (
               <li className={styles.faq_help_link_item}>
-                O Premium Família é um plano com desconto para até 6 pessoas que moram juntas.
+                O Premium Família é um plano com desconto para até 6 pessoas que
+                moram juntas.
               </li>
             )}
           </ul>

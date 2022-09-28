@@ -15,31 +15,36 @@
                             "idmusica": 1,
                             "nomeMusica": "Eita!",
                             "duracao": "5:32",
-                            "nomeArtista": "eu mesmo"
+                            "nomeArtista": "eu mesmo",
+                            "src": "http://172.16.21.191:3000/assets/audio/Mary%20On%20A%20Cross.m4a"
                         },
                         {
                             "idmusica": 2,
                             "nomeMusica": "Sei lá!",
                             "duracao": "4:21",
-                            "nomeArtista": "eu mesmo"
+                            "nomeArtista": "eu mesmo",
+                            "src": "http://172.16.21.191:3000/assets/audio/Mary%20On%20A%20Cross.m4a"
                         },
                         {
                             "idmusica": 3,
                             "nomeMusica": "Professor me empresta um dinheiro",
                             "duracao": "7:22",
-                            "nomeArtista": "eu mesmo"
+                            "nomeArtista": "eu mesmo",
+                            "src": "http://172.16.21.191:3000/assets/audio/Mary%20On%20A%20Cross.m4a"
                         },
                         {
                             "idmusica": 4,
                             "nomeMusica": "Apostei no vasco com um empréstimo do nubank",
                             "duracao": "9:13",
-                            "nomeArtista": "eu mesmo"
+                            "nomeArtista": "eu mesmo",
+                            "src": "http://172.16.21.191:3000/assets/audio/Mary%20On%20A%20Cross.m4a"
                         },
                         {
                             "idmusica": 5,
                             "nomeMusica": "Já mandaram a receita federel bater lá em casa",
                             "duracao": "12:43",
-                            "nomeArtista": "eu mesmo"
+                            "nomeArtista": "eu mesmo",
+                            "src": "http://172.16.21.191:3000/assets/audio/Mary%20On%20A%20Cross.m4a"
                         }
                     ]
                 },
@@ -408,31 +413,31 @@
                     "detail": "OneRepublic are on top of the Hottest 50!",
                     "musicas": [
                         {
-                            "idmusica": 1,
+                            "idmusica": 50,
                             "nomeMusica": "Eita!",
                             "duracao": "5:32",
                             "nomeArtista": "eu mesmo"
                         },
                         {
-                            "idmusica": 2,
+                            "idmusica": 51,
                             "nomeMusica": "Sei lá!",
                             "duracao": "4:21",
                             "nomeArtista": "eu mesmo"
                         },
                         {
-                            "idmusica": 3,
+                            "idmusica": 52,
                             "nomeMusica": "Professor me empresta um dinheiro",
                             "duracao": "7:22",
                             "nomeArtista": "eu mesmo"
                         },
                         {
-                            "idmusica": 4,
+                            "idmusica": 53,
                             "nomeMusica": "Apostei no vasco com um empréstimo do nubank",
                             "duracao": "9:13",
                             "nomeArtista": "eu mesmo"
                         },
                         {
-                            "idmusica": 5,
+                            "idmusica": 54,
                             "nomeMusica": "Já mandaram a receita federel bater lá em casa",
                             "duracao": "12:43",
                             "nomeArtista": "eu mesmo"
@@ -447,239 +452,31 @@
                     "detail": "OneRepublic are on top of the Hottest 50!",
                     "musicas": [
                         {
-                            "idmusica": 1,
+                            "idmusica": 55,
                             "nomeMusica": "Eita!",
                             "duracao": "5:32",
                             "nomeArtista": "eu mesmo"
                         },
                         {
-                            "idmusica": 2,
+                            "idmusica": 56,
                             "nomeMusica": "Sei lá!",
                             "duracao": "4:21",
                             "nomeArtista": "eu mesmo"
                         },
                         {
-                            "idmusica": 3,
+                            "idmusica": 57,
                             "nomeMusica": "Professor me empresta um dinheiro",
                             "duracao": "7:22",
                             "nomeArtista": "eu mesmo"
                         },
                         {
-                            "idmusica": 4,
+                            "idmusica": 58,
                             "nomeMusica": "Apostei no vasco com um empréstimo do nubank",
                             "duracao": "9:13",
                             "nomeArtista": "eu mesmo"
                         },
                         {
-                            "idmusica": 5,
-                            "nomeMusica": "Já mandaram a receita federel bater lá em casa",
-                            "duracao": "12:43",
-                            "nomeArtista": "eu mesmo"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "idcategoria": 3,
-            "nome": "Rock",
-            "playlists": [
-                {
-                    "idplaylist": 13,
-                    "src": "https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e",
-                    "alt": "Imagem",
-                    "title": "Today's Top Hits",
-                    "detail": "OneRepublic are on top of the Hottest 50!"
-                },
-                {
-                    "idplaylist": 14,
-                    "src": "https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e",
-                    "alt": "Imagem",
-                    "title": "Today's Top Hits",
-                    "detail": "OneRepublic are on top of the Hottest 50!",
-                    "musicas": [
-                        {
-                            "idmusica": 1,
-                            "nomeMusica": "Eita!",
-                            "duracao": "5:32",
-                            "nomeArtista": "eu mesmo"
-                        },
-                        {
-                            "idmusica": 2,
-                            "nomeMusica": "Sei lá!",
-                            "duracao": "4:21",
-                            "nomeArtista": "eu mesmo"
-                        },
-                        {
-                            "idmusica": 3,
-                            "nomeMusica": "Professor me empresta um dinheiro",
-                            "duracao": "7:22",
-                            "nomeArtista": "eu mesmo"
-                        },
-                        {
-                            "idmusica": 4,
-                            "nomeMusica": "Apostei no vasco com um empréstimo do nubank",
-                            "duracao": "9:13",
-                            "nomeArtista": "eu mesmo"
-                        },
-                        {
-                            "idmusica": 5,
-                            "nomeMusica": "Já mandaram a receita federel bater lá em casa",
-                            "duracao": "12:43",
-                            "nomeArtista": "eu mesmo"
-                        }
-                    ]
-                },
-                {
-                    "idplaylist": 15,
-                    "src": "https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e",
-                    "alt": "Imagem",
-                    "title": "Today's Top Hits",
-                    "detail": "OneRepublic are on top of the Hottest 50!",
-                    "musicas": [
-                        {
-                            "idmusica": 1,
-                            "nomeMusica": "Eita!",
-                            "duracao": "5:32",
-                            "nomeArtista": "eu mesmo"
-                        },
-                        {
-                            "idmusica": 2,
-                            "nomeMusica": "Sei lá!",
-                            "duracao": "4:21",
-                            "nomeArtista": "eu mesmo"
-                        },
-                        {
-                            "idmusica": 3,
-                            "nomeMusica": "Professor me empresta um dinheiro",
-                            "duracao": "7:22",
-                            "nomeArtista": "eu mesmo"
-                        },
-                        {
-                            "idmusica": 4,
-                            "nomeMusica": "Apostei no vasco com um empréstimo do nubank",
-                            "duracao": "9:13",
-                            "nomeArtista": "eu mesmo"
-                        },
-                        {
-                            "idmusica": 5,
-                            "nomeMusica": "Já mandaram a receita federel bater lá em casa",
-                            "duracao": "12:43",
-                            "nomeArtista": "eu mesmo"
-                        }
-                    ]
-                },
-                {
-                    "idplaylist": 16,
-                    "src": "https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e",
-                    "alt": "Imagem",
-                    "title": "Today's Top Hits",
-                    "detail": "OneRepublic are on top of the Hottest 50!",
-                    "musicas": [
-                        {
-                            "idmusica": 1,
-                            "nomeMusica": "Eita!",
-                            "duracao": "5:32",
-                            "nomeArtista": "eu mesmo"
-                        },
-                        {
-                            "idmusica": 2,
-                            "nomeMusica": "Sei lá!",
-                            "duracao": "4:21",
-                            "nomeArtista": "eu mesmo"
-                        },
-                        {
-                            "idmusica": 3,
-                            "nomeMusica": "Professor me empresta um dinheiro",
-                            "duracao": "7:22",
-                            "nomeArtista": "eu mesmo"
-                        },
-                        {
-                            "idmusica": 4,
-                            "nomeMusica": "Apostei no vasco com um empréstimo do nubank",
-                            "duracao": "9:13",
-                            "nomeArtista": "eu mesmo"
-                        },
-                        {
-                            "idmusica": 5,
-                            "nomeMusica": "Já mandaram a receita federel bater lá em casa",
-                            "duracao": "12:43",
-                            "nomeArtista": "eu mesmo"
-                        }
-                    ]
-                },
-                {
-                    "idplaylist": 17,
-                    "src": "https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e",
-                    "alt": "Imagem",
-                    "title": "Today's Top Hits",
-                    "detail": "OneRepublic are on top of the Hottest 50!",
-                    "musicas": [
-                        {
-                            "idmusica": 1,
-                            "nomeMusica": "Eita!",
-                            "duracao": "5:32",
-                            "nomeArtista": "eu mesmo"
-                        },
-                        {
-                            "idmusica": 2,
-                            "nomeMusica": "Sei lá!",
-                            "duracao": "4:21",
-                            "nomeArtista": "eu mesmo"
-                        },
-                        {
-                            "idmusica": 3,
-                            "nomeMusica": "Professor me empresta um dinheiro",
-                            "duracao": "7:22",
-                            "nomeArtista": "eu mesmo"
-                        },
-                        {
-                            "idmusica": 4,
-                            "nomeMusica": "Apostei no vasco com um empréstimo do nubank",
-                            "duracao": "9:13",
-                            "nomeArtista": "eu mesmo"
-                        },
-                        {
-                            "idmusica": 5,
-                            "nomeMusica": "Já mandaram a receita federel bater lá em casa",
-                            "duracao": "12:43",
-                            "nomeArtista": "eu mesmo"
-                        }
-                    ]
-                },
-                {
-                    "idplaylist": 18,
-                    "src": "https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e",
-                    "alt": "Imagem",
-                    "title": "Today's Top Hits",
-                    "detail": "OneRepublic are on top of the Hottest 50!",
-                    "musicas": [
-                        {
-                            "idmusica": 1,
-                            "nomeMusica": "Eita!",
-                            "duracao": "5:32",
-                            "nomeArtista": "eu mesmo"
-                        },
-                        {
-                            "idmusica": 2,
-                            "nomeMusica": "Sei lá!",
-                            "duracao": "4:21",
-                            "nomeArtista": "eu mesmo"
-                        },
-                        {
-                            "idmusica": 3,
-                            "nomeMusica": "Professor me empresta um dinheiro",
-                            "duracao": "7:22",
-                            "nomeArtista": "eu mesmo"
-                        },
-                        {
-                            "idmusica": 4,
-                            "nomeMusica": "Apostei no vasco com um empréstimo do nubank",
-                            "duracao": "9:13",
-                            "nomeArtista": "eu mesmo"
-                        },
-                        {
-                            "idmusica": 5,
+                            "idmusica": 59,
                             "nomeMusica": "Já mandaram a receita federel bater lá em casa",
                             "duracao": "12:43",
                             "nomeArtista": "eu mesmo"
