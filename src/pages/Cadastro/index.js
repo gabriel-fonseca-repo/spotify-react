@@ -1,7 +1,23 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Cadastro.module.css";
 
 export function Cadastro() {
+  const [email, setEmail] = useState(null);
+  const [emailConfirm, setEmailConfirm] = useState(null);
+  const [password, setPassword] = useState(null);
+  const [name, setName] = useState(null);
+  const [birthdate, setBirthdate] = useState(null);
+  const [gender, setGender] = useState(null);
+  const [check1, setCheck1] = useState(null);
+  const [check2, setCheck2] = useState(null);
+  const [check3, setCheck3] = useState(null);
+
+  const handleInputChange = (e) => {
+    const { value, name } = e.target;
+    console.log(name + " com valor " + value);
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -25,6 +41,7 @@ export function Cadastro() {
             type="email"
             name="email"
             placeholder="Insira o seu e-mail."
+            onChange={(e) => handleInputChange(e)}
           />
         </div>
         <div className={styles.input_group}>
@@ -34,6 +51,7 @@ export function Cadastro() {
             type="email"
             name="emailConfirm"
             placeholder="Insira o seu e-mail novamente."
+            onChange={(e) => handleInputChange(e)}
           />
         </div>
         <div className={styles.input_group}>
@@ -43,6 +61,7 @@ export function Cadastro() {
             type="password"
             name="password"
             placeholder="Crie uma senha."
+            onChange={(e) => handleInputChange(e)}
           />
         </div>
         <div className={styles.input_group}>
@@ -52,6 +71,7 @@ export function Cadastro() {
             type="text"
             name="name"
             placeholder="Insira o seu nome."
+            onChange={(e) => handleInputChange(e)}
           />
           <p className={styles.custom_mt_5}>Isso aparece no seu perfil.</p>
         </div>
@@ -62,25 +82,39 @@ export function Cadastro() {
             type="date"
             name="birthdate"
             placeholder="Insira a sua data de nascimento."
+            onChange={(e) => handleInputChange(e)}
           />
         </div>
         <div className={styles.input_group}>
           <label for="country">Qual o seu gênero?</label>
           <div className={styles.options}>
             <span>
-              <input type="radio" id="man" name="man" value="Masculino" />
+              <input
+                type="radio"
+                id="man"
+                name="gender"
+                value="Masculino"
+                onChange={(e) => handleInputChange(e)}
+              />
               <label for="man">Masculino</label>
             </span>
             <span>
-              <input type="radio" id="woman" name="woman" value="Feminino" />
+              <input
+                type="radio"
+                id="woman"
+                name="gender"
+                value="Feminino"
+                onChange={(e) => handleInputChange(e)}
+              />
               <label for="woman">Feminino</label>
             </span>
             <span>
               <input
                 type="radio"
                 id="nonBinary"
-                name="nonBinary"
+                name="gender"
                 value="Não binário"
+                onChange={(e) => handleInputChange(e)}
               />
               <label for="nonBinary">Não binário</label>
             </span>
@@ -92,7 +126,7 @@ export function Cadastro() {
               className={styles.block}
               type="checkbox"
               id="msg"
-              name="msg"
+              name="check1"
             />
             <label for="msg">
               Não quero receber mensagens de marketing do Spotify
@@ -103,7 +137,7 @@ export function Cadastro() {
               className={styles.block}
               type="checkbox"
               id="dados"
-              name="dados"
+              name="check2"
             />
             <label for="dados">
               Compartilhar meus dados cadastrais com os provedores de conteúdo
@@ -115,7 +149,7 @@ export function Cadastro() {
               className={styles.block}
               type="checkbox"
               id="termos"
-              name="termos"
+              name="check3"
             />
             <label for="termos">
               Eu concordo com os
