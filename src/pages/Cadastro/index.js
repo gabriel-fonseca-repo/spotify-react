@@ -9,13 +9,30 @@ export function Cadastro() {
   const [name, setName] = useState(null);
   const [birthdate, setBirthdate] = useState(null);
   const [gender, setGender] = useState(null);
-  const [check1, setCheck1] = useState(null);
-  const [check2, setCheck2] = useState(null);
-  const [check3, setCheck3] = useState(null);
+  const [check1, setCheck1] = useState(false);
+  const [check2, setCheck2] = useState(false);
+  const [check3, setCheck3] = useState(false);
 
   const handleInputChange = (e) => {
-    const { value, name } = e.target;
-    console.log(name + " com valor " + value);
+    const { value, checked, name } = e.target;
+    if (name === "email") {
+      setEmail(value);
+    }
+    if (name === "emailConfirm") {
+      setEmailConfirm(value);
+    }
+    if (name === "password") {
+      setPassword(value);
+    }
+    if (name === "check1") {
+      setCheck1(!checked);
+    }
+    if (name === "check2") {
+      setCheck2(!checked);
+    }
+    if (name === "check3") {
+      setCheck3(!checked);
+    }
   };
 
   return (
@@ -127,6 +144,7 @@ export function Cadastro() {
               type="checkbox"
               id="msg"
               name="check1"
+              onChange={(e) => handleInputChange(e)}
             />
             <label for="msg">
               Não quero receber mensagens de marketing do Spotify
@@ -138,6 +156,7 @@ export function Cadastro() {
               type="checkbox"
               id="dados"
               name="check2"
+              onChange={(e) => handleInputChange(e)}
             />
             <label for="dados">
               Compartilhar meus dados cadastrais com os provedores de conteúdo
@@ -150,6 +169,7 @@ export function Cadastro() {
               type="checkbox"
               id="termos"
               name="check3"
+              onChange={(e) => handleInputChange(e)}
             />
             <label for="termos">
               Eu concordo com os
