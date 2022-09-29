@@ -1,15 +1,16 @@
 :root {
-    --primary: #fff;
-    --primary-opacity: rgba(255, 255, 255, 0.5);
-    --secondary: #121212;
-    --secondary-opacity: rgba(0, 0, 0, 0.5);
-    --terciary: #000;
-    --background-tinted-press: hsla(0, 0%, 100%, 0.04);
+  --primary: #fff;
+  --primary-opacity: rgba(255, 255, 255, 0.5);
+  --secondary: #121212;
+  --secondary-opacity: rgba(0, 0, 0, 0.5);
+  --terciary: #000;
+  --background-tinted-press: hsla(0, 0%, 100%, 0.04);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
 }

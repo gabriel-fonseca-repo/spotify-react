@@ -1,5 +1,5 @@
 import styles from "./Playlist.module.css";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export function Playlist() {
   const categorias = require("../../data/db.json").categorias;
@@ -24,13 +24,15 @@ export function Playlist() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.logo_container}>
-        <img
-          className={styles.logo}
-          src="../assets/svg/logo.svg"
-          alt="Logo do spotify"
-        ></img>
-      </div>
+      <Link to="/">
+        <div className={styles.logo_container}>
+          <img
+            className={styles.logo}
+            src="../assets/svg/logo.svg"
+            alt="Logo do spotify"
+          ></img>
+        </div>
+      </Link>
 
       <div className={styles.playlist_container}>
         <div className={styles.album_cover_container}>

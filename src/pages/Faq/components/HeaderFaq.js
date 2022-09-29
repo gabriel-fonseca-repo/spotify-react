@@ -14,14 +14,10 @@ export function HeaderFaq() {
         </Link>
       </div>
       <div className={styles.subscribe_login_container}>
-        <a className={styles.subscribe_button} href="#">
-          {" "}
-          Inscreva-se{" "}
-        </a>
-        <a className={styles.login_button} href="#">
-          {" "}
-          Entrar{" "}
-        </a>
+        <Link to="/cadastro">
+          <span className={styles.subscribe_button}>Inscreva-se</span>
+        </Link>
+        <span className={styles.login_button}>Entrar</span>
       </div>
     </header>
   );

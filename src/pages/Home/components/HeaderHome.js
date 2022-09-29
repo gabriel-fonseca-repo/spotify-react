@@ -10,10 +10,12 @@ export function HeaderHome() {
       </div>
       <div className={styles.subscribe_login_container}>
         <Link to="/faq">
-          <a className={styles.subscribe_button}> Dúvidas frequentes </a>
+          <span className={styles.subscribe_button}> Dúvidas frequentes </span>
         </Link>
-        <a className={styles.subscribe_button}> Inscreva-se </a>
-        <a className={styles.login_button}> Entrar </a>
+        <Link to="/cadastro">
+          <span className={styles.subscribe_button}> Inscreva-se </span>
+        </Link>
+        <span className={styles.login_button}> Entrar </span>
       </div>
     </header>
   );
