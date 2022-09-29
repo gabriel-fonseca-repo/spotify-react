@@ -138,11 +138,35 @@ ul {
 }
 
 .music_list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 20px;
   flex-wrap: wrap;
+}
+@media (max-width: 1400px) {
+  .music_list {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 1200px) {
+  .music_list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 1000px) {
+  .music_list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 840px) {
+  .music_list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .music_list {
+    grid-template-columns: 1fr;
+  }
 }
 
 .music_list_card {
