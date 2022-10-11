@@ -13,6 +13,46 @@ export function Cadastro() {
   const [check2, setCheck2] = useState(false);
   const [check3, setCheck3] = useState(false);
 
+  const handleSubmit = () => {
+    console.log(check3);
+    // só é efetuado se tiver marcado o checkbox de termos
+    if (check3) {
+      console.log({
+        email,
+        emailConfirm,
+        password,
+        name,
+        birthdate,
+        gender,
+        check1,
+        check2,
+        check3,
+      });
+
+      let usersAtuais = [];
+
+      if (localStorage.getItem("users") !== null) {
+        usersAtuais = JSON.parse(localStorage.getItem("users"));
+      }
+
+      usersAtuais.push({
+        email,
+        emailConfirm,
+        password,
+        name,
+        birthdate,
+        gender,
+        check1,
+        check2,
+      });
+
+      localStorage.setItem("users", JSON.stringify(usersAtuais));
+
+      console.log("TODOS OS USUARIOS CADASTRADOS:");
+      console.log(usersAtuais);
+    }
+  };
+
   const handleInputChange = (e) => {
     const { value, checked, name } = e.target;
     if (name === "email") {
@@ -24,14 +64,23 @@ export function Cadastro() {
     if (name === "password") {
       setPassword(value);
     }
+    if (name === "name") {
+      setName(value);
+    }
+    if (name === "birthdate") {
+      setBirthdate(value);
+    }
+    if (name === "gender") {
+      setGender(value);
+    }
     if (name === "check1") {
-      setCheck1(!checked);
+      setCheck1(checked);
     }
     if (name === "check2") {
-      setCheck2(!checked);
+      setCheck2(checked);
     }
     if (name === "check3") {
-      setCheck3(!checked);
+      setCheck3(checked);
     }
   };
 
@@ -50,7 +99,7 @@ export function Cadastro() {
       <div id="line">
         <hr />
       </div>
-      <form className={styles.teste} action="">
+      <div className={(styles.teste, styles.form)} action="">
         <div className={styles.input_group}>
           <label for="email">Qual é o seu e-mail?</label>
           <input
@@ -183,14 +232,18 @@ export function Cadastro() {
           <span>Política de Privacidade do Spotify</span>.
         </p>
         <span className={styles.submit}>
-          <button className={styles.button} type="submit">
+          <button
+            onClick={() => handleSubmit()}
+            className={styles.button}
+            type="submit"
+          >
             Inscrever_se
           </button>
           <p>
             Já tem uma conta?<span>Faça login</span>.
           </p>
         </span>
-      </form>
+      </div>
     </div>
   );
 }
