@@ -4,11 +4,11 @@ import { MainHome } from "./components/MainHome";
 import { FooterHome } from "./components/FooterHome";
 
 export function Home() {
-  return (
-    <div className={styles.container}>
-      <NavbarHome></NavbarHome>
-      <MainHome></MainHome>
-      <FooterHome></FooterHome>
-    </div>
-  );
+	return (
+		<div className={styles.container}>
+			<NavbarHome />
+			<MainHome />
+			<FooterHome />
+		</div>
+	);
 }
