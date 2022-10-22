@@ -21,7 +21,7 @@ export function Playlist() {
 			.finally(() => {
 				setLoading(false);
 			});
-	}, []);
+	}, [id]);
 
 	window.onload = () => {
 		document.querySelectorAll("audio[id]").forEach((audio) => {
