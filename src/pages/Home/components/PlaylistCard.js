@@ -5,7 +5,7 @@ export function PlaylistCard(props) {
   return (
     <Link
       className={styles.playlist_card_link}
-      to={"/playlist/" + props.idplaylist}
+      to={"/playlist/" + props.id}
     >
       <div className={styles.music_list_card}>
         <img src={props.src} alt={props.alt} />

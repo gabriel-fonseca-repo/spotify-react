@@ -5,6 +5,8 @@ export function PlaylistCardList(props) {
   const playlists = props.playlists;
   const nomeCategoria = props.nome;
 
+  console.log(playlists);
+
   return (
     <div className={styles.music_list_container}>
       <header>
@@ -14,8 +16,8 @@ export function PlaylistCardList(props) {
       <div className={styles.music_list}>
         {playlists.map((playlist) => (
           <PlaylistCard
-            key={playlist.idplaylist}
-            idplaylist={playlist.idplaylist}
+            key={playlist.id}
+            id={playlist.id}
             src={playlist.src}
             alt={playlist.alt}
             title={playlist.title}
