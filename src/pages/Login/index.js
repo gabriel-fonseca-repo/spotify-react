@@ -4,76 +4,19 @@ import styles from "./Cadastro.module.css";
 
 export function Cadastro() {
   const [email, setEmail] = useState(null);
-  const [emailConfirm, setEmailConfirm] = useState(null);
   const [password, setPassword] = useState(null);
-  const [name, setName] = useState(null);
-  const [birthdate, setBirthdate] = useState(null);
-  const [gender, setGender] = useState(null);
-  const [check1, setCheck1] = useState(false);
-  const [check2, setCheck2] = useState(false);
-  const [check3, setCheck3] = useState(false);
 
-  const showMessage = (message, type) => {
-    alert(message + type);
-  }
-
-  const isEmailTaken = async (email) => {
-    const opcoes = {
-      crossDomain: true,
-      method: "GET",
-      mode: "cors",
-    };
-
-    return await fetch("http://localhost:4000/users?email="+email, opcoes)
-    .then((res) => res.json())
-    .then((json) => {
-      return Object.keys(json).length > 0;
-    })
-  }
-
-
-  const handleSubmit = async () => {
-    if(!check3){
-      return showMessage("Você precisa aceitar os termos!", "error");
-    }
-
-    await isEmailTaken(email).then((isTaken) => {
-      if(isTaken){
-        return showMessage("Email já cadastrado!", "error");
-      }else{
-        let UsuarioAtual = {
-          email,
-          emailConfirm,
-          password,
-          name,
-          birthdate,
-          gender,
-          check1,
-          check2,
-        };
-  
-        const opcoes = {
-          crossDomain: true,
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          mode: "cors",
-          body: JSON.stringify(UsuarioAtual)
-        };
-    
-        fetch("http://localhost:4000/users", opcoes)
-          .then((res) => {
-            if (res.status === 201) {
-              //store user in local storage
-              localStorage.setItem("user", JSON.stringify(UsuarioAtual));
-              showMessage(`Bem vindo, ${name}! Você foi cadastrado com sucesso!`, "success");
-            } else {
-              showMessage("Erro ao realizar o cadastro!", "error");
-            }
-          })
+  const handleSubmit = () => {
+      if (localStorage.getItem("users") !== null) {
+        usersAtuais = JSON.parse(localStorage.getItem("users"));
       }
-    });
+
+      usersAtuais.push({
+        email,
+        password
+      });
+
+      localStorage.setItem("users", JSON.stringify(usersAtuais));
   };
 
   const handleInputChange = (e) => {
