@@ -7,11 +7,11 @@
   height: 100vh;
 
   overflow-x: hidden;
+
+  background-color: var(--secondary);
 }
 
 .container main {
-  background-color: var(--secondary);
-  /* background-color: blue; */
   position: relative;
   left: var(--aside-width);
   width: calc(100% - var(--aside-width));
@@ -143,6 +143,16 @@ ul {
   gap: 20px;
   flex-wrap: wrap;
 }
+
+.div_loading {
+    top: 100px;
+    position: relative;
+    padding: 30px;
+    text-align: center;
+
+    color: var(--primary);
+}
+
 @media (max-width: 1400px) {
   .music_list {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

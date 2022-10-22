@@ -134,3 +134,12 @@
 .pause_button_img:hover {
   color: aliceblue;
 }
+
+.div_loading {
+  top: 100px;
+  position: relative;
+  padding: 30px;
+  text-align: center;
+
+  color: var(--primary);
+}
