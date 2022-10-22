@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./Cadastro.module.css";
 
 export function Cadastro() {
+  const [msg, setMsg] = useState("");
   const [email, setEmail] = useState(null);
   const [emailConfirm, setEmailConfirm] = useState(null);
   const [password, setPassword] = useState(null);
@@ -14,7 +15,7 @@ export function Cadastro() {
   const [check3, setCheck3] = useState(false);
 
   const showMessage = (message, type) => {
-    alert(message + type);
+    setMsg({ message, type });
   }
 
   const isEmailTaken = async (email) => {
@@ -254,16 +255,24 @@ export function Cadastro() {
           protege seus dados pessoais, leia a
           <span>Política de Privacidade do Spotify</span>.
         </p>
+        {msg !== "" && 
+        <div className={`${styles[msg.type]}  ${styles.msg}`}>
+          <p>{msg.message}</p>
+          <button onClick={()=> setMsg("")}>
+              X
+          </button>
+        </div>
+      }
         <span className={styles.submit}>
           <button
             onClick={() => handleSubmit()}
             className={styles.button}
             type="submit"
           >
-            Inscrever_se
+            Inscrever-se
           </button>
           <p>
-            Já tem uma conta?<span>Faça login</span>.
+            Já tem uma conta?<Link to="/Login">Faça Login</Link>.
           </p>
         </span>
       </div>

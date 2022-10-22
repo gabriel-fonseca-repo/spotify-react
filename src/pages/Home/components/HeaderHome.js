@@ -1,7 +1,23 @@
+import { useEffect, useState } from "react";
 import styles from "../Home.module.css";
 import { Link } from "react-router-dom";
 
 export function HeaderHome() {
+  const [isLogado, setIsLogado] = useState(null);
+
+  function checkIsLogado() {
+    return localStorage.getItem("user") !== null;
+  }
+
+  function deslogar() {
+    localStorage.removeItem("user");
+    setIsLogado(checkIsLogado());
+  }
+
+  useEffect(() => {
+		setIsLogado(checkIsLogado());
+	}, []);
+
   return (
     <header>
       <div className={styles.navigation_container}>
@@ -12,10 +28,24 @@ export function HeaderHome() {
         <Link to="/faq">
           <span className={styles.subscribe_button}> Dúvidas frequentes </span>
         </Link>
-        <Link to="/cadastro">
-          <span className={styles.subscribe_button}> Inscreva-se </span>
-        </Link>
-        <span className={styles.login_button}> Entrar </span>
+        {!isLogado ?    
+        <>
+          <Link to="/cadastro">
+            <span className={styles.subscribe_button}> Inscreva-se </span>
+          </Link>
+          <Link to="/login" className={styles.login_button}> Login </Link>
+        </>
+        :
+        <>
+          <Link to="/login"
+            onClick={() => deslogar()}
+            className={styles.subscribe_button}
+            type="submit"
+          >
+            Deslogar
+          </Link>
+        </>
+        }
       </div>
     </header>
   );

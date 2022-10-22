@@ -1,52 +1,49 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import styles from "./Cadastro.module.css";
+import styles from "./Login.module.css";
 
-export function Cadastro() {
+export function Login() {
+  const [msg, setMsg] = useState("");
   const [email, setEmail] = useState(null);
   const [password, setPassword] = useState(null);
 
-  const handleSubmit = () => {
-      if (localStorage.getItem("users") !== null) {
-        usersAtuais = JSON.parse(localStorage.getItem("users"));
+  const showMessage = (message, type) => {
+    setMsg({ message, type });
+  }
+
+  const handleSubmit = async () => {
+    await logar().then((user) => {
+      if(user){
+        if(user.password === password){
+          localStorage.setItem("user", user);
+          showMessage("Login realizado com sucesso!", "success");
+        }
+      }else{
+        return showMessage("Email ou senha incorretos!", "error");
       }
+    });
 
-      usersAtuais.push({
-        email,
-        password
-      });
-
-      localStorage.setItem("users", JSON.stringify(usersAtuais));
   };
 
+  const logar = async () => {
+    const opcoes = {
+      crossDomain: true,
+      method: "GET",
+      mode: "cors",
+    };
+
+    return await fetch("http://localhost:4000/users?email="+email, opcoes)
+    .then((res) => res.json())
+    .then((json) => json[0]);
+  }
+
   const handleInputChange = (e) => {
-    const { value, checked, name } = e.target;
+    const { value, name } = e.target;
     if (name === "email") {
       setEmail(value);
     }
-    if (name === "emailConfirm") {
-      setEmailConfirm(value);
-    }
     if (name === "password") {
       setPassword(value);
-    }
-    if (name === "name") {
-      setName(value);
-    }
-    if (name === "birthdate") {
-      setBirthdate(value);
-    }
-    if (name === "gender") {
-      setGender(value);
-    }
-    if (name === "check1") {
-      setCheck1(checked);
-    }
-    if (name === "check2") {
-      setCheck2(checked);
-    }
-    if (name === "check3") {
-      setCheck3(checked);
     }
   };
 
@@ -60,14 +57,14 @@ export function Cadastro() {
             alt="Logo do spotify"
           />
         </Link>
-        <h1 className={styles.title}>Inscreva-se grátis e comece a curtir.</h1>
+        <h1 className={styles.title}>Entre na sua conta e tenha acesso ao site!</h1>
       </div>
       <div id="line">
         <hr />
       </div>
       <div className={(styles.teste, styles.form)} action="">
         <div className={styles.input_group}>
-          <label for="email">Qual é o seu e-mail?</label>
+          <label for="email">Email:</label>
           <input
             className={styles.text_input}
             type="email"
@@ -77,17 +74,7 @@ export function Cadastro() {
           />
         </div>
         <div className={styles.input_group}>
-          <label for="emailConfirm">Confirme seu e_mail:</label>
-          <input
-            className={styles.text_input}
-            type="email"
-            name="emailConfirm"
-            placeholder="Insira o seu e-mail novamente."
-            onChange={(e) => handleInputChange(e)}
-          />
-        </div>
-        <div className={styles.input_group}>
-          <label for="password">Crie uma senha:</label>
+          <label for="password">Senha:</label>
           <input
             className={styles.text_input}
             type="password"
@@ -96,102 +83,14 @@ export function Cadastro() {
             onChange={(e) => handleInputChange(e)}
           />
         </div>
-        <div className={styles.input_group}>
-          <label for="name">Como devemos chamar você?</label>
-          <input
-            className={styles.text_input}
-            type="text"
-            name="name"
-            placeholder="Insira o seu nome."
-            onChange={(e) => handleInputChange(e)}
-          />
-          <p className={styles.custom_mt_5}>Isso aparece no seu perfil.</p>
+        {msg !== "" && 
+        <div className={`${styles[msg.type]}  ${styles.msg}`}>
+          <p>{msg.message}</p>
+          <button onClick={()=> setMsg("")}>
+              X
+          </button>
         </div>
-        <div className={styles.input_group}>
-          <label for="birthdate">Qual a sua data de nascimento?</label>
-          <input
-            className={styles.text_input}
-            type="date"
-            name="birthdate"
-            placeholder="Insira a sua data de nascimento."
-            onChange={(e) => handleInputChange(e)}
-          />
-        </div>
-        <div className={styles.input_group}>
-          <label for="country">Qual o seu gênero?</label>
-          <div className={styles.options}>
-            <span>
-              <input
-                type="radio"
-                id="man"
-                name="gender"
-                value="Masculino"
-                onChange={(e) => handleInputChange(e)}
-              />
-              <label for="man">Masculino</label>
-            </span>
-            <span>
-              <input
-                type="radio"
-                id="woman"
-                name="gender"
-                value="Feminino"
-                onChange={(e) => handleInputChange(e)}
-              />
-              <label for="woman">Feminino</label>
-            </span>
-            <span>
-              <input
-                type="radio"
-                id="nonBinary"
-                name="gender"
-                value="Não binário"
-                onChange={(e) => handleInputChange(e)}
-              />
-              <label for="nonBinary">Não binário</label>
-            </span>
-          </div>
-        </div>
-        <div className={styles.checkbox_group}>
-          <div className={styles.checkbox}>
-            <input
-              className={styles.block}
-              type="checkbox"
-              id="msg"
-              name="check1"
-              onChange={(e) => handleInputChange(e)}
-            />
-            <label for="msg">
-              Não quero receber mensagens de marketing do Spotify
-            </label>
-          </div>
-          <div className={styles.checkbox}>
-            <input
-              className={styles.block}
-              type="checkbox"
-              id="dados"
-              name="check2"
-              onChange={(e) => handleInputChange(e)}
-            />
-            <label for="dados">
-              Compartilhar meus dados cadastrais com os provedores de conteúdo
-              do Spotify para fins de marketing.
-            </label>
-          </div>
-          <div className={styles.checkbox}>
-            <input
-              className={styles.block}
-              type="checkbox"
-              id="termos"
-              name="check3"
-              onChange={(e) => handleInputChange(e)}
-            />
-            <label for="termos">
-              Eu concordo com os
-              <span>Termos e Condições de Uso do Spotify.</span>
-            </label>
-          </div>
-        </div>
+      }
         <p className={styles.terms}>
           Para saber mais sobre como o Spotify coleta, utiliza, compartilha e
           protege seus dados pessoais, leia a
@@ -203,10 +102,10 @@ export function Cadastro() {
             className={styles.button}
             type="submit"
           >
-            Inscrever_se
+            Logar
           </button>
           <p>
-            Já tem uma conta?<span>Faça login</span>.
+            Ainda não tem uma conta?<Link to="/Cadastro">Crie uma conta</Link>.
           </p>
         </span>
       </div>

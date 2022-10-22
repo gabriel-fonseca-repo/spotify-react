@@ -115,3 +115,32 @@ hr {
   font-size: 1rem;
   font-weight: bold;
 }
+
+
+.msg{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px  20px;
+  color: black;
+  border-radius: 5px;
+  margin: 10px;
+}
+.msg button{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color:  black;
+}
+.msg.success{
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+.msg.error{
+  background-color: #DB5461 !important;
+  color: white;
+}
+.msg.error button{
+  color: white;
+}
