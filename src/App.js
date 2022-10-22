@@ -5,6 +5,8 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { Playlist } from "./pages/Playlist";
 import { Cadastro } from "./pages/Cadastro";
 import { Login } from "./pages/Login";
+import { CriarPlaylist } from "./pages/CriarPlaylist";
+import { Biblioteca } from "./pages/Biblioteca";
 
 function App() {
 	return (
@@ -15,6 +17,8 @@ function App() {
 				<Route path="/cadastro" element={<Cadastro />} />
 				<Route path="/login" element={<Login />} />
 				<Route path="/playlist/:id" element={<Playlist />} />
+				<Route path="/criarplaylist" element={<CriarPlaylist />} />
+				<Route path="/biblioteca" element={<Biblioteca />} />
 			</Routes>
 		</BrowserRouter>
 	);

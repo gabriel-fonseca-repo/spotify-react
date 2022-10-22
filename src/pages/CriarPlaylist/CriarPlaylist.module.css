@@ -1,0 +1,144 @@
+:root {
+	--media-button-width: 20px;
+	--media-button-height: 30px;
+}
+
+.container {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow: hidden;
+	background-color: var(--secondary);
+	font-size: 20px;
+	width: 100vw;
+	height: 100vh;
+}
+
+.container main {
+	position: relative;
+	left: var(--aside-width);
+	width: calc(100% - var(--aside-width));
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.cadastro_playlist_container main > header {
+	position: fixed;
+	top: 0;
+
+	width: calc(100% - var(--aside-width));
+	background-color: var(--secondary-opacity);
+	height: 65px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 0px 30px;
+
+	z-index: 5;
+}
+
+.content {
+	position: relative;
+
+	top: 65px;
+	padding: 30px;
+
+	min-height: max-content;
+
+	display: flex;
+	flex-direction: row;
+}
+
+.primeira_metade {
+	display: flex;
+	flex-direction: column;
+
+	width: 50%;
+
+	padding: 2%;
+}
+
+.segunda_metade {
+	display: flex;
+	flex-direction: column;
+
+	width: 50%;
+
+	padding: 2%;
+}
+
+.text_input {
+	height: 52px;
+	width: 100%;
+	font-size: 1rem;
+	padding: 14px;
+	margin-bottom: 20px;
+}
+
+.item_musica_lista {
+	justify-content: flex-start;
+
+	color: var(--primary);
+}
+
+.div_loading {
+	top: 100px;
+	position: relative;
+	padding: 30px;
+	text-align: center;
+
+	color: var(--primary);
+}
+
+.botao_adicionar_musica {
+	width: 1.2rem;
+	height: 1.2rem;
+}
+
+.button {
+  border: 0px;
+  border-radius: 100px;
+  background-color: #1ed760;
+  color: black;
+  padding: 16px 42px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.msg{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px  20px;
+  color: black;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.msg button{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color:  black;
+}
+.msg.success{
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+.msg.error{
+  background-color: #DB5461 !important;
+  color: white;
+}
+.msg.error button{
+  color: white;
+}
