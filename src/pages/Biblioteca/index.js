@@ -1,0 +1,66 @@
+import { useEffect, useState } from "react";
+import { FooterHome } from "../Home/components/FooterHome";
+import { HeaderHome } from "../Home/components/HeaderHome";
+import { NavbarHome } from "../Home/components/NavbarHome";
+import styles from "./Biblioteca.module.css";
+
+export function Biblioteca() {
+	const [playlists, setPlaylists] = useState([]);
+	const [loading, setLoading] = useState(true);
+	const [isLogado, setIsLogado] = useState(null);
+
+	let checkIsLogado = () => {
+		return localStorage.getItem("user") !== null;
+	};
+
+	useEffect(() => {
+		setIsLogado(checkIsLogado());
+
+		const opcoes = {
+			crossDomain: true,
+			method: "GET",
+			mode: "cors",
+		};
+
+		fetch(
+			"http://localhost:4000/playlists?iduser=" +
+				JSON.parse(localStorage.getItem("user")).id,
+			opcoes
+		)
+			.then((res) => res.json())
+			.then((json) => setPlaylists(json))
+			.finally(() => {
+				setLoading(false);
+			});
+	}, []);
+
+	return (
+		<div className={styles.container}>
+			<NavbarHome />
+			<div className={styles.cadastro_playlist_container}>
+				<main>
+					<HeaderHome />
+					{!isLogado ? (
+						<div className={styles.div_loading}>Non estás logado !</div>
+					) : loading ? (
+						<div className={styles.div_loading}>Carregando...</div>
+					) : (
+						<div className={styles.content}>
+							<div className={styles.primeira_metade}>
+								<ul>
+									{playlists.map((musica, index) => (
+										<li className={styles.item_musica_lista} key={index}>
+											{musica.title}
+										</li>
+									))}
+								</ul>
+							</div>
+							<div className={styles.segunda_metade}></div>
+						</div>
+					)}
+				</main>
+			</div>
+			<FooterHome />
+		</div>
+	);
+}

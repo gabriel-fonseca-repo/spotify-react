@@ -46,7 +46,7 @@
 	flex: 1;
 }
 
-main > header {
+.main_content_faq > header {
 	position: fixed;
 	top: 0;
 

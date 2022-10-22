@@ -5,7 +5,7 @@ import styles from "./Faq.module.css";
 export function Faq() {
 	return (
 		<div className={styles.container}>
-			<main>
+			<main className={styles.main_content_faq}>
 				<HeaderFaq></HeaderFaq>
 				<ContentFaq></ContentFaq>
 			</main>
