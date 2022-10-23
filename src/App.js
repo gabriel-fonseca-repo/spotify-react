@@ -19,6 +19,7 @@ function App() {
 				<Route path="/playlist/:id" element={<Playlist />} />
 				<Route path="/criarplaylist" element={<CriarPlaylist />} />
 				<Route path="/biblioteca" element={<Biblioteca />} />
+				<Route path="/editar-cadastro" element={<Cadastro isEdit/>} />
 			</Routes>
 		</BrowserRouter>
 	);

@@ -37,6 +37,9 @@ export function HeaderHome() {
         </>
         :
         <>
+          <Link to="/editar-cadastro">
+            <span className={styles.subscribe_button}> Editar Cadastro </span>
+          </Link>
           <Link to="/login"
             onClick={() => deslogar()}
             className={styles.subscribe_button}
