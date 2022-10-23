@@ -30,7 +30,7 @@ export function MainHome() {
 					<div className={styles.div_loading}>Carregando...</div>
 				) : (
 					<div className={styles.content}>
-						{categorias.map((categoria) => (
+						{categorias.length && categorias.map((categoria) => (
 							<PlaylistCardList
 								key={categoria.id}
 								nome={categoria.nome}
