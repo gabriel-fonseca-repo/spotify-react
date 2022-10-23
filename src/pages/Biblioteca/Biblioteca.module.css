@@ -58,38 +58,6 @@
 	flex-direction: row;
 }
 
-.primeira_metade {
-	display: flex;
-	flex-direction: column;
-
-	width: 50%;
-
-	padding: 2%;
-}
-
-.segunda_metade {
-	display: flex;
-	flex-direction: column;
-
-	width: 50%;
-
-	padding: 2%;
-}
-
-.text_input {
-	height: 52px;
-	width: 100%;
-	font-size: 1rem;
-	padding: 14px;
-	margin-bottom: 20px;
-}
-
-.item_musica_lista {
-	justify-content: flex-start;
-
-	color: var(--primary);
-}
-
 .div_loading {
 	top: 100px;
 	position: relative;
@@ -97,20 +65,4 @@
 	text-align: center;
 
 	color: var(--primary);
-}
-
-.botao_adicionar_musica {
-	width: 1.2rem;
-	height: 1.2rem;
-}
-
-.button {
-  border: 0px;
-  border-radius: 100px;
-  background-color: #1ed760;
-  color: black;
-  padding: 16px 42px;
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 20px;
 }

@@ -28,7 +28,7 @@ export function CriarPlaylist() {
 	};
 
 	let cadastrarPlaylist = (e) => {
-		if (musicasUsuario == null || musicasUsuario.length > 0) {
+		if (musicasUsuario == null || !musicasUsuario.length > 0) {
 			showMessage("Deve adicionar pelo menos uma música", "error");
 			return;
 		}
@@ -159,6 +159,17 @@ export function CriarPlaylist() {
 									{musicasUsuario.map((musica, index) => (
 										<li className={styles.item_musica_lista} key={index}>
 											{musica.nomeMusica}
+											<button
+												className={styles.botao_adicionar_musica}
+												type="button"
+												onClick={() => {
+													setMusicasUsuario(
+														musicasUsuario.filter((a) => a.id !== musica.id)
+													);
+												}}
+											>
+												-
+											</button>
 										</li>
 									))}
 								</ul>

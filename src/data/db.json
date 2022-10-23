@@ -9,42 +9,48 @@
           "src": "https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e",
           "alt": "Imagem",
           "title": "Today's Top Hits",
-          "detail": "OneRepublic are on top of the Hottest 50!"
+          "detail": "OneRepublic are on top of the Hottest 50!",
+          "iduser": 0
         },
         {
           "id": 2,
           "src": "https://i.scdn.co/image/ab67706f000000020f8b64a7a62d12de1210e660",
           "alt": "Imagem",
           "title": "Today's Top Hits",
-          "detail": "OneRepublic are on top of the Hottest 50!"
+          "detail": "OneRepublic are on top of the Hottest 50!",
+          "iduser": 0
         },
         {
           "id": 3,
           "src": "https://i.scdn.co/image/ab67706f00000002f95e0d3dd06dbadb407ef766",
           "alt": "Imagem",
           "title": "Today's Top Hits",
-          "detail": "OneRepublic are on top of the Hottest 50!"
+          "detail": "OneRepublic are on top of the Hottest 50!",
+          "iduser": 0
         },
         {
           "id": 4,
           "src": "https://i.scdn.co/image/ab67706f000000023b52952432e3a6d3f517eb2e",
           "alt": "Imagem",
           "title": "Today's Top Hits",
-          "detail": "OneRepublic are on top of the Hottest 50!"
+          "detail": "OneRepublic are on top of the Hottest 50!",
+          "iduser": 0
         },
         {
           "id": 5,
           "src": "https://i.scdn.co/image/ab67706f0000000222c83d30f2a375d0ba99b377",
           "alt": "Imagem",
           "title": "Today's Top Hits",
-          "detail": "OneRepublic are on top of the Hottest 50!"
+          "detail": "OneRepublic are on top of the Hottest 50!",
+          "iduser": 0
         },
         {
           "id": 6,
           "src": "https://i.scdn.co/image/ab67706f00000002bf3bd3f4b22276ca752cea7d",
           "alt": "Imagem",
           "title": "Today's Top Hits",
-          "detail": "OneRepublic are on top of the Hottest 50!"
+          "detail": "OneRepublic are on top of the Hottest 50!",
+          "iduser": 0
         }
       ]
     },
@@ -57,42 +63,48 @@
           "src": "https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e",
           "alt": "Imagem",
           "title": "Today's Top Hits",
-          "detail": "OneRepublic are on top of the Hottest 50!"
+          "detail": "OneRepublic are on top of the Hottest 50!",
+          "iduser": 0
         },
         {
           "id": 8,
           "src": "https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e",
           "alt": "Imagem",
           "title": "Today's Top Hits",
-          "detail": "OneRepublic are on top of the Hottest 50!"
+          "detail": "OneRepublic are on top of the Hottest 50!",
+          "iduser": 0
         },
         {
           "id": 9,
           "src": "https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e",
           "alt": "Imagem",
           "title": "Today's Top Hits",
-          "detail": "OneRepublic are on top of the Hottest 50!"
+          "detail": "OneRepublic are on top of the Hottest 50!",
+          "iduser": 0
         },
         {
           "id": 10,
           "src": "https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e",
           "alt": "Imagem",
           "title": "Today's Top Hits",
-          "detail": "OneRepublic are on top of the Hottest 50!"
+          "detail": "OneRepublic are on top of the Hottest 50!",
+          "iduser": 0
         },
         {
           "id": 11,
           "src": "https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e",
           "alt": "Imagem",
           "title": "Today's Top Hits",
-          "detail": "OneRepublic are on top of the Hottest 50!"
+          "detail": "OneRepublic are on top of the Hottest 50!",
+          "iduser": 0
         },
         {
           "id": 12,
           "src": "https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e",
           "alt": "Imagem",
           "title": "Today's Top Hits",
-          "detail": "OneRepublic are on top of the Hottest 50!"
+          "detail": "OneRepublic are on top of the Hottest 50!",
+          "iduser": 0
         }
       ]
     }
@@ -104,6 +116,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
+      "iduser": 0,
       "musicas": [
         {
           "id": 1,
@@ -148,6 +161,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
+      "iduser": 0,
       "musicas": [
         {
           "id": 6,
@@ -192,6 +206,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
+      "iduser": 0,
       "musicas": [
         {
           "id": 11,
@@ -236,6 +251,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
+      "iduser": 0,
       "musicas": [
         {
           "id": 16,
@@ -280,6 +296,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
+      "iduser": 0,
       "musicas": [
         {
           "id": 21,
@@ -324,6 +341,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
+      "iduser": 0,
       "musicas": [
         {
           "id": 26,
@@ -368,6 +386,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
+      "iduser": 0,
       "musicas": [
         {
           "id": 31,
@@ -412,6 +431,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
+      "iduser": 0,
       "musicas": [
         {
           "id": 36,
@@ -456,6 +476,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
+      "iduser": 0,
       "musicas": [
         {
           "id": 41,
@@ -500,6 +521,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
+      "iduser": 0,
       "musicas": [
         {
           "id": 46,
@@ -544,6 +566,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
+      "iduser": 0,
       "musicas": [
         {
           "id": 50,
@@ -588,6 +611,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
+      "iduser": 0,
       "musicas": [
         {
           "id": 55,
@@ -627,48 +651,28 @@
       ]
     },
     {
-      "src": "https://appdividend.com/wp-content/uploads/2019/03/Javascript-Array-Includes-Tutorial.png",
+      "src": "aaaaaaaa",
       "alt": "Imagem",
-      "title": "awdawdawd",
-      "detail": "awdawdawd",
-      "musicas": [
-        {
-          "id": 1,
-          "nomeMusica": "Eita!",
-          "duracao": "5:32",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        },
-        {
-          "id": 2,
-          "nomeMusica": "Sei lá!",
-          "duracao": "4:21",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        },
-        {
-          "id": 3,
-          "nomeMusica": "Professor me empresta um dinheiro",
-          "duracao": "7:22",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        }
-      ],
+      "title": "aaaaaaaaaa",
+      "detail": "aaaaaaaaaa",
+      "musicas": [],
+      "iduser": 3,
       "id": 13
     },
     {
-      "src": "https://appdividend.com/wp-content/uploads/2019/03/Javascript-Array-Includes-Tutorial.png",
+      "src": "teste",
       "alt": "Imagem",
-      "title": "TESTE",
-      "detail": "TESTE",
+      "title": "teste",
+      "detail": "teste",
       "musicas": [],
+      "iduser": 3,
       "id": 14
     },
     {
-      "src": "https://appdividend.com/wp-content/uploads/2019/03/Javascript-Array-Includes-Tutorial.png",
+      "src": "teste",
       "alt": "Imagem",
-      "title": "TESTE",
-      "detail": "TESTE",
+      "title": "teste",
+      "detail": "teste",
       "musicas": [
         {
           "id": 1,
@@ -683,22 +687,16 @@
           "duracao": "4:21",
           "nomeArtista": "eu mesmo",
           "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        },
-        {
-          "id": 3,
-          "nomeMusica": "Professor me empresta um dinheiro",
-          "duracao": "7:22",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
         }
       ],
+      "iduser": 3,
       "id": 15
     },
     {
-      "src": "https://appdividend.com/wp-content/uploads/2019/03/Javascript-Array-Includes-Tutorial.png",
+      "src": "awdawd",
       "alt": "Imagem",
-      "title": "TESTE",
-      "detail": "TESTE",
+      "title": "adwawd",
+      "detail": "awdawd",
       "musicas": [
         {
           "id": 1,
@@ -722,13 +720,14 @@
           "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
         }
       ],
+      "iduser": 3,
       "id": 16
     },
     {
-      "src": "https://appdividend.com/wp-content/uploads/2019/03/Javascript-Array-Includes-Tutorial.png",
+      "src": "wwwwwwwwwwww",
       "alt": "Imagem",
-      "title": "TESTE",
-      "detail": "TESTE",
+      "title": "wwwwwwww",
+      "detail": "wwwwwwww",
       "musicas": [
         {
           "id": 1,
@@ -750,304 +749,52 @@
           "duracao": "7:22",
           "nomeArtista": "eu mesmo",
           "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
+        },
+        {
+          "id": 4,
+          "nomeMusica": "Apostei no vasco com um empréstimo do nubank",
+          "duracao": "9:13",
+          "nomeArtista": "eu mesmo",
+          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
+        },
+        {
+          "id": 5,
+          "nomeMusica": "Já mandaram a receita federel bater lá em casa",
+          "duracao": "12:43",
+          "nomeArtista": "eu mesmo",
+          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
+        },
+        {
+          "id": 6,
+          "nomeMusica": "Eita!",
+          "duracao": "5:32",
+          "nomeArtista": "eu mesmo",
+          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
+        },
+        {
+          "id": 7,
+          "nomeMusica": "Sei lá!",
+          "duracao": "4:21",
+          "nomeArtista": "eu mesmo",
+          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
+        },
+        {
+          "id": 8,
+          "nomeMusica": "Professor me empresta um dinheiro",
+          "duracao": "7:22",
+          "nomeArtista": "eu mesmo",
+          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
+        },
+        {
+          "id": 9,
+          "nomeMusica": "Apostei no vasco com um empréstimo do nubank",
+          "duracao": "9:13",
+          "nomeArtista": "eu mesmo",
+          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
         }
       ],
+      "iduser": 3,
       "id": 17
-    },
-    {
-      "src": "https://appdividend.com/wp-content/uploads/2019/03/Javascript-Array-Includes-Tutorial.png",
-      "alt": "Imagem",
-      "title": "TESTE",
-      "detail": "TESTE",
-      "musicas": [
-        {
-          "id": 1,
-          "nomeMusica": "Eita!",
-          "duracao": "5:32",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        },
-        {
-          "id": 2,
-          "nomeMusica": "Sei lá!",
-          "duracao": "4:21",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        },
-        {
-          "id": 3,
-          "nomeMusica": "Professor me empresta um dinheiro",
-          "duracao": "7:22",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        }
-      ],
-      "id": 18
-    },
-    {
-      "src": "https://appdividend.com/wp-content/uploads/2019/03/Javascript-Array-Includes-Tutorial.png",
-      "alt": "Imagem",
-      "title": "TESTE",
-      "detail": "TESTE",
-      "musicas": [
-        {
-          "id": 1,
-          "nomeMusica": "Eita!",
-          "duracao": "5:32",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        },
-        {
-          "id": 2,
-          "nomeMusica": "Sei lá!",
-          "duracao": "4:21",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        },
-        {
-          "id": 3,
-          "nomeMusica": "Professor me empresta um dinheiro",
-          "duracao": "7:22",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        }
-      ],
-      "iduser": 3,
-      "id": 19
-    },
-    {
-      "src": "https://appdividend.com/wp-content/uploads/2019/03/Javascript-Array-Includes-Tutorial.png",
-      "alt": "Imagem",
-      "title": "TESTEPLAYLIST",
-      "detail": "TESTEPLAYLIST",
-      "musicas": [
-        {
-          "id": 1,
-          "nomeMusica": "Eita!",
-          "duracao": "5:32",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        },
-        {
-          "id": 2,
-          "nomeMusica": "Sei lá!",
-          "duracao": "4:21",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        },
-        {
-          "id": 3,
-          "nomeMusica": "Professor me empresta um dinheiro",
-          "duracao": "7:22",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        },
-        {
-          "id": 6,
-          "nomeMusica": "Eita!",
-          "duracao": "5:32",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        }
-      ],
-      "iduser": 3,
-      "id": 20
-    },
-    {
-      "src": "https://appdividend.com/wp-content/uploads/2019/03/Javascript-Array-Includes-Tutorial.png",
-      "alt": "Imagem",
-      "title": "TESTEPLAYLIST",
-      "detail": "TESTEPLAYLIST",
-      "musicas": [
-        {
-          "id": 1,
-          "nomeMusica": "Eita!",
-          "duracao": "5:32",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        },
-        {
-          "id": 2,
-          "nomeMusica": "Sei lá!",
-          "duracao": "4:21",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        },
-        {
-          "id": 3,
-          "nomeMusica": "Professor me empresta um dinheiro",
-          "duracao": "7:22",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        },
-        {
-          "id": 6,
-          "nomeMusica": "Eita!",
-          "duracao": "5:32",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        }
-      ],
-      "iduser": 3,
-      "id": 21
-    },
-    {
-      "src": "https://appdividend.com/wp-content/uploads/2019/03/Javascript-Array-Includes-Tutorial.png",
-      "alt": "Imagem",
-      "title": "TESTEPLAYLIST",
-      "detail": "TESTEPLAYLIST",
-      "musicas": [
-        {
-          "id": 1,
-          "nomeMusica": "Eita!",
-          "duracao": "5:32",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        },
-        {
-          "id": 2,
-          "nomeMusica": "Sei lá!",
-          "duracao": "4:21",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        },
-        {
-          "id": 3,
-          "nomeMusica": "Professor me empresta um dinheiro",
-          "duracao": "7:22",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        },
-        {
-          "id": 6,
-          "nomeMusica": "Eita!",
-          "duracao": "5:32",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        }
-      ],
-      "iduser": 3,
-      "id": 22
-    },
-    {
-      "src": "dawdawd",
-      "alt": "Imagem",
-      "title": "awdawd",
-      "detail": "awdawdaw",
-      "musicas": [
-        {
-          "id": 1,
-          "nomeMusica": "Eita!",
-          "duracao": "5:32",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        },
-        {
-          "id": 2,
-          "nomeMusica": "Sei lá!",
-          "duracao": "4:21",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        }
-      ],
-      "iduser": 3,
-      "id": 23
-    },
-    {
-      "src": "",
-      "alt": "Imagem",
-      "title": "",
-      "detail": "",
-      "musicas": [],
-      "iduser": 3,
-      "id": 24
-    },
-    {
-      "src": "dawdawdawdawd",
-      "alt": "Imagem",
-      "title": "",
-      "detail": "",
-      "musicas": [],
-      "iduser": 3,
-      "id": 25
-    },
-    {
-      "src": "",
-      "alt": "Imagem",
-      "title": "",
-      "detail": "",
-      "musicas": [],
-      "iduser": 3,
-      "id": 26
-    },
-    {
-      "src": "awdaw",
-      "alt": "Imagem",
-      "title": "awdawd",
-      "detail": "awd",
-      "musicas": [],
-      "iduser": 3,
-      "id": 27
-    },
-    {
-      "src": "dawda",
-      "alt": "Imagem",
-      "title": "dawdawd",
-      "detail": "wdawdaw",
-      "musicas": [],
-      "iduser": 3,
-      "id": 28
-    },
-    {
-      "id": 29
-    },
-    {
-      "id": 30
-    },
-    {
-      "id": 31
-    },
-    {
-      "id": 32
-    },
-    {
-      "id": 33
-    },
-    {
-      "id": 34
-    },
-    {
-      "id": 35
-    },
-    {
-      "id": 36
-    },
-    {
-      "id": 37
-    },
-    {
-      "src": "awdawdawd",
-      "alt": "Imagem",
-      "title": "awdawdawd",
-      "detail": "awdawdawd",
-      "musicas": [
-        {
-          "id": 1,
-          "nomeMusica": "Eita!",
-          "duracao": "5:32",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        },
-        {
-          "id": 2,
-          "nomeMusica": "Sei lá!",
-          "duracao": "4:21",
-          "nomeArtista": "eu mesmo",
-          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
-        }
-      ],
-      "iduser": 3,
-      "id": 38
     }
   ],
   "users": [

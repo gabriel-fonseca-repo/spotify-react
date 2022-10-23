@@ -7,10 +7,10 @@ export function PlaylistCardList(props) {
 
   return (
     <div className={styles.music_list_container}>
-      <header>
+      <span>
         <h3>{nomeCategoria}</h3>
         <span>VER TUDO</span>
-      </header>
+      </span>
       <div className={styles.music_list}>
         {playlists.map((playlist) => (
           <PlaylistCard

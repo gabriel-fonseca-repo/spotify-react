@@ -55,22 +55,19 @@ export function Playlist() {
 							<div>{playlist.title}</div>
 						</div>
 						<div className={styles.detalhes_playlist}>
+							<input
+								className={styles.slider_volume}
+								type="range"
+								id="volume-slider"
+								onChange={() => {
+									document.querySelectorAll("audio[id]").forEach((audio) => {
+										audio.volume =
+											document.getElementById("volume-slider").value / 100;
+									});
+								}}
+							/>
 							<ul className={styles.music_list}>
-								<li>
-									<input
-										type="range"
-										id="volume-slider"
-										onChange={() => {
-											document
-												.querySelectorAll("audio[id]")
-												.forEach((audio) => {
-													audio.volume =
-														document.getElementById("volume-slider").value /
-														100;
-												});
-										}}
-									/>
-								</li>
+								<li></li>
 								{playlist.musicas.map((ms, index) => (
 									<li className={styles.titulo_musica} key={ms.idmusica}>
 										<audio id={"musica-" + ms.idmusica}>

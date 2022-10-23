@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { FooterHome } from "../Home/components/FooterHome";
 import { HeaderHome } from "../Home/components/HeaderHome";
 import { NavbarHome } from "../Home/components/NavbarHome";
+import { PlaylistCardList } from "../Home/components/PlaylistCardList";
 import styles from "./Biblioteca.module.css";
 
 export function Biblioteca() {
@@ -46,16 +47,11 @@ export function Biblioteca() {
 						<div className={styles.div_loading}>Carregando...</div>
 					) : (
 						<div className={styles.content}>
-							<div className={styles.primeira_metade}>
-								<ul>
-									{playlists.map((musica, index) => (
-										<li className={styles.item_musica_lista} key={index}>
-											{musica.title}
-										</li>
-									))}
-								</ul>
-							</div>
-							<div className={styles.segunda_metade}></div>
+							<PlaylistCardList
+								key={1}
+								nome={"Suas playlists"}
+								playlists={playlists}
+							/>
 						</div>
 					)}
 				</main>
