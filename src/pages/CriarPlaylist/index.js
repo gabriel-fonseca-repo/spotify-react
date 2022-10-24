@@ -12,7 +12,6 @@ export function CriarPlaylist() {
 	const [isLogado, setIsLogado] = useState(null);
 	const [inputText, setInputText] = useState("");
 
-	const [playlist, setPlaylist] = useState({});
 	const [nomePlaylist, setNomePlaylist] = useState("");
 	const [descricao, setDescricao] = useState("");
 	const [urlImagem, setUrlImagem] = useState("");
