@@ -888,6 +888,37 @@
       ],
       "iduser": 2,
       "id": 20
+    },
+    {
+      "src": "https://i.scdn.co/image/ab67706f00000002d32be7c2025605fa3f6b70a6",
+      "alt": "Imagem",
+      "title": "testeimagem",
+      "detail": "testeimagem",
+      "musicas": [
+        {
+          "id": 1,
+          "nomeMusica": "Eita!",
+          "duracao": "5:32",
+          "nomeArtista": "eu mesmo",
+          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
+        },
+        {
+          "id": 2,
+          "nomeMusica": "Sei lá!",
+          "duracao": "4:21",
+          "nomeArtista": "eu mesmo",
+          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
+        },
+        {
+          "id": 3,
+          "nomeMusica": "Professor me empresta um dinheiro",
+          "duracao": "7:22",
+          "nomeArtista": "eu mesmo",
+          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
+        }
+      ],
+      "iduser": 3,
+      "id": 21
     }
   ],
   "users": [
