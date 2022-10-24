@@ -51,6 +51,7 @@ export function Biblioteca() {
 								key={1}
 								nome={"Suas playlists"}
 								playlists={playlists}
+								editable={true}
 							/>
 						</div>
 					)}
