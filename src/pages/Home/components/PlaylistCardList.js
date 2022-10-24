@@ -20,6 +20,7 @@ export function PlaylistCardList(props) {
             alt={playlist.alt}
             title={playlist.title}
             detail={playlist.detail}
+            editable={props.editable}
           />
         ))}
       </div>
