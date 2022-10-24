@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { FooterHome } from "../Home/components/FooterHome";
 import { HeaderHome } from "../Home/components/HeaderHome";
 import { NavbarHome } from "../Home/components/NavbarHome";
@@ -11,10 +12,14 @@ export function CriarPlaylist() {
 	const [isLogado, setIsLogado] = useState(null);
 	const [inputText, setInputText] = useState("");
 
+	const [playlist, setPlaylist] = useState({});
 	const [nomePlaylist, setNomePlaylist] = useState("");
 	const [descricao, setDescricao] = useState("");
 	const [urlImagem, setUrlImagem] = useState("");
 	const [musicasUsuario, setMusicasUsuario] = useState([]);
+
+	const { id } = useParams();
+	const isEditar = (id !== null && id !== undefined);
 
 	let limparCampos = () => {
 		setNomePlaylist("");
@@ -23,9 +28,26 @@ export function CriarPlaylist() {
 		setMusicasUsuario([]);
 	};
 
-	const showMessage = (message, type) => {
+	let checkIsLogado = () => {
+		return localStorage.getItem("user") !== null;
+	};
+
+	let manusearInput = (e) => {
+		var lowerCase = e.target.value.toLowerCase();
+		setInputText(lowerCase);
+	};
+
+	let showMessage = (message, type) => {
 		setMsg({ message, type });
 	};
+
+	const musicasFiltradas = musicas.filter((musica) => {
+		if (inputText === "") {
+			return musica;
+		} else {
+			return musica.nomeMusica.toLowerCase().includes(inputText);
+		}
+	});
 
 	let cadastrarPlaylist = (e) => {
 		if (musicasUsuario == null || !musicasUsuario.length > 0) {
@@ -46,23 +68,42 @@ export function CriarPlaylist() {
 			musicas: musicasUsuario,
 			iduser: JSON.parse(localStorage.getItem("user")).id,
 		};
+		
+		if (isEditar) {
+			const opcoes = {
+				crossDomain: true,
+				method: "PATCH",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				mode: "cors",
+				body: JSON.stringify(playlist),
+			};
 
-		const opcoes = {
-			crossDomain: true,
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json",
-			},
-			mode: "cors",
-			body: JSON.stringify(playlist),
-		};
-
-		fetch("http://localhost:4000/playlists", opcoes)
-			.then((res) => {})
+			fetch(`http://localhost:4000/playlists/${id}`, opcoes)
+			.then((res) => { })
 			.finally(() => {
 				limparCampos();
 				showMessage("Playlist cadastrada com sucesso!", "success");
 			});
+		} else {
+			const opcoes = {
+				crossDomain: true,
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				mode: "cors",
+				body: JSON.stringify(playlist),
+			};
+
+			fetch("http://localhost:4000/playlists", opcoes)
+				.then((res) => { })
+				.finally(() => {
+					limparCampos();
+					showMessage("Playlist cadastrada com sucesso!", "success");
+				});
+		}
 	};
 
 	useEffect(() => {
@@ -80,24 +121,21 @@ export function CriarPlaylist() {
 			.finally(() => {
 				setLoading(false);
 			});
-	}, []);
 
-	let checkIsLogado = () => {
-		return localStorage.getItem("user") !== null;
-	};
-
-	let manusearInput = (e) => {
-		var lowerCase = e.target.value.toLowerCase();
-		setInputText(lowerCase);
-	};
-
-	const musicasFiltradas = musicas.filter((musica) => {
-		if (inputText === "") {
-			return musica;
-		} else {
-			return musica.nomeMusica.toLowerCase().includes(inputText);
+		if (id !== null && id !== undefined) {
+			fetch("http://localhost:4000/playlists/" + id, opcoes)
+				.then((res) => res.json())
+				.then((playlist) => {
+					setNomePlaylist(playlist.title);
+					setDescricao(playlist.detail);
+					setUrlImagem(playlist.src);
+					setMusicasUsuario(playlist.musicas);
+				})
+				.finally(() => {
+					setLoading(false);
+				});
 		}
-	});
+	}, []);
 
 	return (
 		<div className={styles.container}>
