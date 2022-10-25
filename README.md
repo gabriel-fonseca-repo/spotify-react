@@ -24,7 +24,7 @@ npm i json-server -g
 json-server.cmd -p 4000 .\src\data\db.json
 ```
 
-## Windows
+## Linux
 
 ```
 json-server -p 4000 src/data/db.json
