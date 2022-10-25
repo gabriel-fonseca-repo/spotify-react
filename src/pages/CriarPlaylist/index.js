@@ -18,7 +18,7 @@ export function CriarPlaylist() {
 	const [musicasUsuario, setMusicasUsuario] = useState([]);
 
 	const { id } = useParams();
-	const isEditar = (id !== null && id !== undefined);
+	const isEditar = id !== null && id !== undefined;
 
 	let limparCampos = () => {
 		setNomePlaylist("");
@@ -41,7 +41,7 @@ export function CriarPlaylist() {
 	};
 
 	const musicasFiltradas = musicas.filter((musica) => {
-		if (inputText === "") {
+		if (!inputText) {
 			return musica;
 		} else {
 			return musica.nomeMusica.toLowerCase().includes(inputText);
@@ -67,7 +67,7 @@ export function CriarPlaylist() {
 			musicas: musicasUsuario,
 			iduser: JSON.parse(localStorage.getItem("user")).id,
 		};
-		
+
 		if (isEditar) {
 			const opcoes = {
 				crossDomain: true,
@@ -80,11 +80,11 @@ export function CriarPlaylist() {
 			};
 
 			fetch(`http://localhost:4000/playlists/${id}`, opcoes)
-			.then((res) => { })
-			.finally(() => {
-				limparCampos();
-				showMessage("Playlist cadastrada com sucesso!", "success");
-			});
+				.then((res) => {})
+				.finally(() => {
+					limparCampos();
+					showMessage("Playlist atualizada com sucesso!", "success");
+				});
 		} else {
 			const opcoes = {
 				crossDomain: true,
@@ -97,7 +97,7 @@ export function CriarPlaylist() {
 			};
 
 			fetch("http://localhost:4000/playlists", opcoes)
-				.then((res) => { })
+				.then((res) => {})
 				.finally(() => {
 					limparCampos();
 					showMessage("Playlist cadastrada com sucesso!", "success");
@@ -134,7 +134,7 @@ export function CriarPlaylist() {
 					setLoading(false);
 				});
 		}
-	}, []);
+	}, [id]);
 
 	return (
 		<div className={styles.container}>

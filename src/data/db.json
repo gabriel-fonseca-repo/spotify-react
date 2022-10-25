@@ -651,11 +651,26 @@
       ]
     },
     {
-      "src": "aaaaaaaa",
+      "src": "aaaaaaaaawdawd",
       "alt": "Imagem",
       "title": "aaaaaaaaaa",
       "detail": "aaaaaaaaaa",
-      "musicas": [],
+      "musicas": [
+        {
+          "id": 1,
+          "nomeMusica": "Eita!",
+          "duracao": "5:32",
+          "nomeArtista": "eu mesmo",
+          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
+        },
+        {
+          "id": 2,
+          "nomeMusica": "Sei lá!",
+          "duracao": "4:21",
+          "nomeArtista": "eu mesmo",
+          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
+        }
+      ],
       "iduser": 3,
       "id": 13
     },
@@ -919,6 +934,44 @@
       ],
       "iduser": 3,
       "id": 21
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/571aabd58a65e2b3ce073304/1610003767379-3EI5A6YIMVBP6LKX6XQQ/image-asset.jpeg",
+      "alt": "Imagem",
+      "title": "awdawd",
+      "detail": "awdawdawd",
+      "musicas": [
+        {
+          "id": 1,
+          "nomeMusica": "Eita!",
+          "duracao": "5:32",
+          "nomeArtista": "eu mesmo",
+          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
+        },
+        {
+          "id": 2,
+          "nomeMusica": "Sei lá!",
+          "duracao": "4:21",
+          "nomeArtista": "eu mesmo",
+          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
+        },
+        {
+          "id": 3,
+          "nomeMusica": "Professor me empresta um dinheiro",
+          "duracao": "7:22",
+          "nomeArtista": "eu mesmo",
+          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
+        },
+        {
+          "id": 4,
+          "nomeMusica": "Apostei no vasco com um empréstimo do nubank",
+          "duracao": "9:13",
+          "nomeArtista": "eu mesmo",
+          "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
+        }
+      ],
+      "iduser": 3,
+      "id": 22
     }
   ],
   "users": [

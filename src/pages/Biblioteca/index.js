@@ -15,24 +15,27 @@ export function Biblioteca() {
 	};
 
 	useEffect(() => {
-		setIsLogado(checkIsLogado());
+		var isLogadoLocal = checkIsLogado();
+		setIsLogado(isLogadoLocal);
 
-		const opcoes = {
-			crossDomain: true,
-			method: "GET",
-			mode: "cors",
-		};
+		if (isLogadoLocal) {
+			const opcoes = {
+				crossDomain: true,
+				method: "GET",
+				mode: "cors",
+			};
 
-		fetch(
-			"http://localhost:4000/playlists?iduser=" +
-				JSON.parse(localStorage.getItem("user")).id,
-			opcoes
-		)
-			.then((res) => res.json())
-			.then((json) => setPlaylists(json))
-			.finally(() => {
-				setLoading(false);
-			});
+			fetch(
+				"http://localhost:4000/playlists?iduser=" +
+					JSON.parse(localStorage.getItem("user")).id,
+				opcoes
+			)
+				.then((res) => res.json())
+				.then((json) => setPlaylists(json))
+				.finally(() => {
+					setLoading(false);
+				});
+		}
 	}, []);
 
 	return (
