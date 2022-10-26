@@ -14,7 +14,7 @@ export function MainHome() {
 			mode: "cors",
 		};
 
-		fetch("http://localhost:4000/categorias", opcoes)
+		fetch("http://127.0.0.1:4000/categorias", opcoes)
 			.then((res) => res.json())
 			.then((json) => setCategorias(json))
 			.finally(() => {
