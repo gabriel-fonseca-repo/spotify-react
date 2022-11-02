@@ -26,7 +26,7 @@ export function Cadastro(props) {
 			mode: "cors",
 		};
 
-		return await fetch("http://localhost:4000/users?email=" + email, opcoes)
+		return await fetch(process.env.REACT_APP_URL_API + "/users?email=" + email, opcoes)
 			.then((res) => res.json())
 			.then((json) => {
 				return Object.keys(json).length > 0;
@@ -63,7 +63,7 @@ export function Cadastro(props) {
 					body: JSON.stringify(UsuarioAtual),
 				};
 
-				fetch("http://localhost:4000/users", opcoes)
+				fetch(process.env.REACT_APP_URL_API + "/users", opcoes)
 					.then((res) => {
 						if (res.status === 201) {
 							res.json().then((json) => {

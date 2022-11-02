@@ -15,7 +15,7 @@ export function Playlist() {
 			mode: "cors",
 		};
 
-		fetch("http://localhost:4000/playlists/" + id, opcoes)
+		fetch(process.env.REACT_APP_URL_API + "/playlist/" + id, opcoes)
 			.then((res) => res.json())
 			.then((json) => setPlaylist(json))
 			.finally(() => {
@@ -67,9 +67,8 @@ export function Playlist() {
 								}}
 							/>
 							<ul className={styles.music_list}>
-								<li></li>
 								{playlist.musicas.map((ms, index) => (
-									<li className={styles.titulo_musica} key={ms.idmusica}>
+									<li className={styles.titulo_musica} key={index}>
 										<audio id={"musica-" + ms.idmusica}>
 											<source src={ms.src} />
 										</audio>

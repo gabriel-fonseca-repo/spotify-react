@@ -96,7 +96,7 @@ export function CriarPlaylist() {
 				body: JSON.stringify(playlist),
 			};
 
-			fetch("http://localhost:4000/playlists", opcoes)
+			fetch(process.env.REACT_APP_URL_API + "/playlists", opcoes)
 				.then((res) => {})
 				.finally(() => {
 					limparCampos();
@@ -114,7 +114,7 @@ export function CriarPlaylist() {
 			mode: "cors",
 		};
 
-		fetch("http://localhost:4000/musicas", opcoes)
+		fetch(process.env.REACT_APP_URL_API + "/musicas", opcoes)
 			.then((res) => res.json())
 			.then((json) => setMusicas(json))
 			.finally(() => {
@@ -122,7 +122,7 @@ export function CriarPlaylist() {
 			});
 
 		if (id !== null && id !== undefined) {
-			fetch("http://localhost:4000/playlists/" + id, opcoes)
+			fetch(process.env.REACT_APP_URL_API + "/playlist/" + id, opcoes)
 				.then((res) => res.json())
 				.then((playlist) => {
 					setNomePlaylist(playlist.title);

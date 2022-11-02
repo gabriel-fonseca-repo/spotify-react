@@ -10,11 +10,12 @@ export function MainHome() {
 	useEffect(() => {
 		const opcoes = {
 			crossDomain: true,
-			method: "GET",
-			mode: "cors",
+			method: "GET", 
+			mode: "cors",	
 		};
 
-		fetch("http://127.0.0.1:4000/categorias", opcoes)
+
+		fetch(process.env.REACT_APP_URL_API + "/categorias", opcoes)
 			.then((res) => res.json())
 			.then((json) => setCategorias(json))
 			.finally(() => {

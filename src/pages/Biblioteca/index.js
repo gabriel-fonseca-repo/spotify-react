@@ -26,7 +26,8 @@ export function Biblioteca() {
 			};
 
 			fetch(
-				"http://localhost:4000/playlists?iduser=" +
+				process.env.REACT_APP_URL_API +
+					"/playlists?iduser=" +
 					JSON.parse(localStorage.getItem("user")).id,
 				opcoes
 			)

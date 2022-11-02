@@ -10,7 +10,7 @@
           "alt": "Imagem",
           "title": "Today's Top Hits",
           "detail": "OneRepublic are on top of the Hottest 50!",
-          "iduser": 0
+          "user": 0
         },
         {
           "id": 2,
@@ -18,7 +18,7 @@
           "alt": "Imagem",
           "title": "Today's Top Hits",
           "detail": "OneRepublic are on top of the Hottest 50!",
-          "iduser": 0
+          "user": 0
         },
         {
           "id": 3,
@@ -26,7 +26,7 @@
           "alt": "Imagem",
           "title": "Today's Top Hits",
           "detail": "OneRepublic are on top of the Hottest 50!",
-          "iduser": 0
+          "user": 0
         },
         {
           "id": 4,
@@ -34,7 +34,7 @@
           "alt": "Imagem",
           "title": "Today's Top Hits",
           "detail": "OneRepublic are on top of the Hottest 50!",
-          "iduser": 0
+          "user": 0
         },
         {
           "id": 5,
@@ -42,7 +42,7 @@
           "alt": "Imagem",
           "title": "Today's Top Hits",
           "detail": "OneRepublic are on top of the Hottest 50!",
-          "iduser": 0
+          "user": 0
         },
         {
           "id": 6,
@@ -50,12 +50,12 @@
           "alt": "Imagem",
           "title": "Today's Top Hits",
           "detail": "OneRepublic are on top of the Hottest 50!",
-          "iduser": 0
+          "user": 0
         }
       ]
     },
     {
-      "idcategoria": 2,
+      "id": 2,
       "nome": "Regue",
       "playlists": [
         {
@@ -64,7 +64,7 @@
           "alt": "Imagem",
           "title": "Today's Top Hits",
           "detail": "OneRepublic are on top of the Hottest 50!",
-          "iduser": 0
+          "user": 0
         },
         {
           "id": 8,
@@ -72,7 +72,7 @@
           "alt": "Imagem",
           "title": "Today's Top Hits",
           "detail": "OneRepublic are on top of the Hottest 50!",
-          "iduser": 0
+          "user": 0
         },
         {
           "id": 9,
@@ -80,7 +80,7 @@
           "alt": "Imagem",
           "title": "Today's Top Hits",
           "detail": "OneRepublic are on top of the Hottest 50!",
-          "iduser": 0
+          "user": 0
         },
         {
           "id": 10,
@@ -88,7 +88,7 @@
           "alt": "Imagem",
           "title": "Today's Top Hits",
           "detail": "OneRepublic are on top of the Hottest 50!",
-          "iduser": 0
+          "user": 0
         },
         {
           "id": 11,
@@ -96,7 +96,7 @@
           "alt": "Imagem",
           "title": "Today's Top Hits",
           "detail": "OneRepublic are on top of the Hottest 50!",
-          "iduser": 0
+          "user": 0
         },
         {
           "id": 12,
@@ -104,7 +104,7 @@
           "alt": "Imagem",
           "title": "Today's Top Hits",
           "detail": "OneRepublic are on top of the Hottest 50!",
-          "iduser": 0
+          "user": 0
         }
       ]
     }
@@ -116,7 +116,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
-      "iduser": 0,
+      "user": 0,
       "musicas": [
         {
           "id": 1,
@@ -161,7 +161,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
-      "iduser": 0,
+      "user": 0,
       "musicas": [
         {
           "id": 6,
@@ -206,7 +206,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
-      "iduser": 0,
+      "user": 0,
       "musicas": [
         {
           "id": 11,
@@ -251,7 +251,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
-      "iduser": 0,
+      "user": 0,
       "musicas": [
         {
           "id": 16,
@@ -296,7 +296,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
-      "iduser": 0,
+      "user": 0,
       "musicas": [
         {
           "id": 21,
@@ -341,7 +341,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
-      "iduser": 0,
+      "user": 0,
       "musicas": [
         {
           "id": 26,
@@ -386,7 +386,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
-      "iduser": 0,
+      "user": 0,
       "musicas": [
         {
           "id": 31,
@@ -431,7 +431,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
-      "iduser": 0,
+      "user": 0,
       "musicas": [
         {
           "id": 36,
@@ -476,7 +476,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
-      "iduser": 0,
+      "user": 0,
       "musicas": [
         {
           "id": 41,
@@ -521,7 +521,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
-      "iduser": 0,
+      "user": 0,
       "musicas": [
         {
           "id": 46,
@@ -566,7 +566,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
-      "iduser": 0,
+      "user": 0,
       "musicas": [
         {
           "id": 50,
@@ -611,7 +611,7 @@
       "alt": "Imagem",
       "title": "Today's Top Hits",
       "detail": "OneRepublic are on top of the Hottest 50!",
-      "iduser": 0,
+      "user": 0,
       "musicas": [
         {
           "id": 55,
@@ -671,7 +671,7 @@
           "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
         }
       ],
-      "iduser": 3,
+      "user": 3,
       "id": 13
     },
     {
@@ -680,7 +680,7 @@
       "title": "teste",
       "detail": "teste",
       "musicas": [],
-      "iduser": 3,
+      "user": 3,
       "id": 14
     },
     {
@@ -704,7 +704,7 @@
           "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
         }
       ],
-      "iduser": 3,
+      "user": 3,
       "id": 15
     },
     {
@@ -735,7 +735,7 @@
           "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
         }
       ],
-      "iduser": 3,
+      "user": 3,
       "id": 16
     },
     {
@@ -808,7 +808,7 @@
           "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
         }
       ],
-      "iduser": 3,
+      "user": 3,
       "id": 17
     },
     {
@@ -832,7 +832,7 @@
           "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
         }
       ],
-      "iduser": 2,
+      "user": 2,
       "id": 18
     },
     {
@@ -884,7 +884,7 @@
           "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
         }
       ],
-      "iduser": 2,
+      "user": 2,
       "id": 19
     },
     {
@@ -901,7 +901,7 @@
           "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
         }
       ],
-      "iduser": 2,
+      "user": 2,
       "id": 20
     },
     {
@@ -932,7 +932,7 @@
           "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
         }
       ],
-      "iduser": 3,
+      "user": 3,
       "id": 21
     },
     {
@@ -970,7 +970,7 @@
           "src": "https://www.groovydomain.com/gallery/music/ORIGINAL/Pink%20Floyd/The%20Dark%20Side%20of%20the%20Moon/09%20Eclipse.mp3"
         }
       ],
-      "iduser": 3,
+      "user": 3,
       "id": 22
     }
   ],

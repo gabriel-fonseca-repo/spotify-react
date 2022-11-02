@@ -16,7 +16,7 @@ export function Login() {
 
 	const handleSubmit = async () => {
 		await logar().then((user) => {
-			if (user) {
+			if (user.email) {
 				if (user.password === password) {
 					localStorage.setItem("user", JSON.stringify(user));
 					showMessage("Login realizado com sucesso!", "success");
@@ -35,9 +35,9 @@ export function Login() {
 			mode: "cors",
 		};
 
-		return await fetch("http://localhost:4000/users?email=" + email, opcoes)
+		return await fetch(process.env.REACT_APP_URL_API + "/users/" + email, opcoes)
 			.then((res) => res.json())
-			.then((json) => json[0]);
+			.then((json) => json);
 	};
 
 	const handleInputChange = (e) => {
