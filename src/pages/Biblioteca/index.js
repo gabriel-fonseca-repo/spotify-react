@@ -27,8 +27,8 @@ export function Biblioteca() {
 
 			fetch(
 				process.env.REACT_APP_URL_API +
-					"/playlists?iduser=" +
-					JSON.parse(localStorage.getItem("user")).id,
+					"/playlist/usuario/" +
+					JSON.parse(localStorage.getItem("user")).id + "/",
 				opcoes
 			)
 				.then((res) => res.json())

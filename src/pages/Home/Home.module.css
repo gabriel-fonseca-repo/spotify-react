@@ -140,7 +140,7 @@ ul {
 .music_list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 60px;
   flex-wrap: wrap;
 }
 
@@ -180,7 +180,7 @@ ul {
 }
 
 .music_list_card {
-  height: 270px;
+  height: fit-content;
   width: 170px;
   border-radius: 10px;
   padding: 16px;

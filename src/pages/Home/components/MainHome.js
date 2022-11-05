@@ -14,8 +14,7 @@ export function MainHome() {
 			mode: "cors",	
 		};
 
-
-		fetch(process.env.REACT_APP_URL_API + "/categorias", opcoes)
+		fetch(process.env.REACT_APP_URL_API + "/categoria/", opcoes)
 			.then((res) => res.json())
 			.then((json) => setCategorias(json))
 			.finally(() => {

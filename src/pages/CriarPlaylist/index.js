@@ -65,38 +65,33 @@ export function CriarPlaylist() {
 			title: nomePlaylist,
 			detail: descricao,
 			musicas: musicasUsuario,
-			iduser: JSON.parse(localStorage.getItem("user")).id,
+			user: JSON.parse(localStorage.getItem("user")),
 		};
 
 		if (isEditar) {
-			const opcoes = {
-				crossDomain: true,
-				method: "PATCH",
-				headers: {
-					"Content-Type": "application/json",
-				},
-				mode: "cors",
-				body: JSON.stringify(playlist),
-			};
+			playlist.id = id;
+		}
 
-			fetch(`http://localhost:4000/playlists/${id}`, opcoes)
+		const opcoes = {
+			crossDomain: true,
+			headers: {
+				"Content-Type": "application/json",
+			},
+			mode: "cors",
+			body: JSON.stringify(playlist),
+		};
+
+		if (isEditar) {
+			opcoes.method = "PATCH";
+			fetch(process.env.REACT_APP_URL_API + "/playlist/alterar/" + id + "/", opcoes)
 				.then((res) => {})
 				.finally(() => {
 					limparCampos();
 					showMessage("Playlist atualizada com sucesso!", "success");
 				});
 		} else {
-			const opcoes = {
-				crossDomain: true,
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-				},
-				mode: "cors",
-				body: JSON.stringify(playlist),
-			};
-
-			fetch(process.env.REACT_APP_URL_API + "/playlists", opcoes)
+			opcoes.method = "POST";
+			fetch(process.env.REACT_APP_URL_API + "/playlist/cadastrar/", opcoes)
 				.then((res) => {})
 				.finally(() => {
 					limparCampos();
@@ -110,11 +105,14 @@ export function CriarPlaylist() {
 
 		const opcoes = {
 			crossDomain: true,
+			headers: {
+				"Content-Type": "application/json",
+			},
 			method: "GET",
 			mode: "cors",
 		};
 
-		fetch(process.env.REACT_APP_URL_API + "/musicas", opcoes)
+		fetch(process.env.REACT_APP_URL_API + "/musicas/", opcoes)
 			.then((res) => res.json())
 			.then((json) => setMusicas(json))
 			.finally(() => {
@@ -122,7 +120,7 @@ export function CriarPlaylist() {
 			});
 
 		if (id !== null && id !== undefined) {
-			fetch(process.env.REACT_APP_URL_API + "/playlist/" + id, opcoes)
+			fetch(process.env.REACT_APP_URL_API + "/playlist/consultar/" + id + "/", opcoes)
 				.then((res) => res.json())
 				.then((playlist) => {
 					setNomePlaylist(playlist.title);

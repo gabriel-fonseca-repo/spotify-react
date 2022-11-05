@@ -15,7 +15,7 @@ export function Playlist() {
 			mode: "cors",
 		};
 
-		fetch(process.env.REACT_APP_URL_API + "/playlist/" + id, opcoes)
+		fetch(process.env.REACT_APP_URL_API + "/playlist/consultar/" + id + "/", opcoes)
 			.then((res) => res.json())
 			.then((json) => setPlaylist(json))
 			.finally(() => {

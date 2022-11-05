@@ -16,26 +16,36 @@ export function Login() {
 
 	const handleSubmit = async () => {
 		await logar().then((user) => {
-			if (user.email) {
-				if (user.password === password) {
-					localStorage.setItem("user", JSON.stringify(user));
-					showMessage("Login realizado com sucesso!", "success");
-					navigate("/");
-				}
-			} else {
+			console.log(user);
+			if (user.validateLogin === null)
+				return showMessage("Usuario não cadastrado!", "error");
+
+			if (!user.validateLogin)
 				return showMessage("Email ou senha incorretos!", "error");
-			}
+
+			localStorage.setItem("user", JSON.stringify(user));
+			navigate("/");
 		});
 	};
 
 	const logar = async () => {
 		const opcoes = {
 			crossDomain: true,
-			method: "GET",
+			method: "POST",
 			mode: "cors",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify({
+				password: password,
+				email: email,
+			}),
 		};
 
-		return await fetch(process.env.REACT_APP_URL_API + "/users/" + email, opcoes)
+		return await fetch(
+			process.env.REACT_APP_URL_API + "/users/validate/",
+			opcoes
+		)
 			.then((res) => res.json())
 			.then((json) => json);
 	};

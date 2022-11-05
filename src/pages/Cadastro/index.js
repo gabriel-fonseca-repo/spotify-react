@@ -26,10 +26,13 @@ export function Cadastro(props) {
 			mode: "cors",
 		};
 
-		return await fetch(process.env.REACT_APP_URL_API + "/users?email=" + email, opcoes)
+		return await fetch(
+			process.env.REACT_APP_URL_API + "/users/" + email + "/",
+			opcoes
+		)
 			.then((res) => res.json())
 			.then((json) => {
-				return Object.keys(json).length > 0;
+				return json.taken;
 			});
 	};
 
@@ -63,21 +66,22 @@ export function Cadastro(props) {
 					body: JSON.stringify(UsuarioAtual),
 				};
 
-				fetch(process.env.REACT_APP_URL_API + "/users", opcoes)
-					.then((res) => {
-						if (res.status === 201) {
-							res.json().then((json) => {
-								//store user in local storage
-								localStorage.setItem("user", JSON.stringify(json));
-								showMessage(
-									`Bem vindo, ${json.name}! Você foi cadastrado com sucesso!`,
-									"success"
-								);
-							});
-						} else {
-							showMessage("Erro ao realizar o cadastro!", "error");
-						}
-					});
+				fetch(process.env.REACT_APP_URL_API + "/users/", opcoes).then((res) => {
+					if (res) {
+						res.json().then((json) => {
+							if (json.id === null || json.id === undefined) {
+								showMessage("Erro ao realizar o cadastro!", "error");
+								return;
+							}
+							localStorage.setItem("user", JSON.stringify(json));
+							showMessage(
+								`Bem vindo, ${json.name}! Você foi cadastrado com sucesso!`,
+								"success"
+							);
+						});
+					} else {
+					}
+				});
 			}
 		});
 	};
@@ -114,12 +118,15 @@ export function Cadastro(props) {
 	};
 
 	const submitEdit = async () => {
+		const userId = JSON.parse(localStorage.getItem("user")).id;
+
 		let UsuarioAtual = {
 			email: email !== null ? email : undefined,
 			emailConfirm: emailConfirm !== null ? emailConfirm : undefined,
 			password: password !== null ? password : undefined,
 			birthdate: birthdate !== null ? birthdate : undefined,
-			gender: gender !== null ? gender : undefined
+			gender: gender !== null ? gender : undefined,
+			id: userId,
 		};
 
 		const opcoes = {
@@ -132,25 +139,17 @@ export function Cadastro(props) {
 			body: JSON.stringify(UsuarioAtual),
 		};
 
-		const userId = JSON.parse(localStorage.getItem("user")).id;
-		console.log(userId);
-
-		if(userId) {
-			fetch(`http://localhost:4000/users/${userId}`, opcoes)
-				.then((res) => {
-					if (res.status === 200) {
-						res.json().then((json) => {
-							//store user in local storage
-							localStorage.setItem("user", JSON.stringify(json));
-							showMessage(
-								`Cadastro foi editado com sucesso`,
-								"success"
-							);
-						});
-					} else {
-						showMessage("Erro ao realizar a edição do cadastro!", "error");
-					}
-				});
+		if (userId) {
+			fetch(process.env.REACT_APP_URL_API + "/users/" + userId, opcoes).then((res) => {
+				if (res.status === 200) {
+					res.json().then((json) => {
+						localStorage.setItem("user", JSON.stringify(json));
+						showMessage(`Cadastro foi editado com sucesso`, "success");
+					});
+				} else {
+					showMessage("Erro ao realizar a edição do cadastro!", "error");
+				}
+			});
 		} else {
 			showMessage("Erro, você não está logado.", "error");
 		}
@@ -173,7 +172,9 @@ export function Cadastro(props) {
 			</div>
 			<div className={(styles.teste, styles.form)} action="">
 				<div className={styles.input_group}>
-					<label htmlFor="email">Qual é o seu {isEdit ? "novo" : ""} e-mail?</label>
+					<label htmlFor="email">
+						Qual é o seu {isEdit ? "novo" : ""} e-mail?
+					</label>
 					<input
 						className={styles.text_input}
 						type="email"
@@ -183,7 +184,9 @@ export function Cadastro(props) {
 					/>
 				</div>
 				<div className={styles.input_group}>
-					<label htmlFor="emailConfirm">Confirme seu {isEdit ? "novo" : ""} e-mail:</label>
+					<label htmlFor="emailConfirm">
+						Confirme seu {isEdit ? "novo" : ""} e-mail:
+					</label>
 					<input
 						className={styles.text_input}
 						type="email"
@@ -193,7 +196,9 @@ export function Cadastro(props) {
 					/>
 				</div>
 				<div className={styles.input_group}>
-					<label htmlFor="password">{isEdit ? "Diga sua nova senha" : "Crie uma senha"}:</label>
+					<label htmlFor="password">
+						{isEdit ? "Diga sua nova senha" : "Crie uma senha"}:
+					</label>
 					<input
 						className={styles.text_input}
 						type="password"
@@ -202,7 +207,7 @@ export function Cadastro(props) {
 						onChange={(e) => handleInputChange(e)}
 					/>
 				</div>
-				{!isEdit &&
+				{!isEdit && (
 					<div className={styles.input_group}>
 						<label htmlFor="name">Como devemos chamar você?</label>
 						<input
@@ -214,9 +219,11 @@ export function Cadastro(props) {
 						/>
 						<p className={styles.custom_mt_5}>Isso aparece no seu perfil.</p>
 					</div>
-				}
+				)}
 				<div className={styles.input_group}>
-					<label htmlFor="birthdate">Qual a sua {isEdit ? "nova" : ""} data de nascimento?</label>
+					<label htmlFor="birthdate">
+						Qual a sua {isEdit ? "nova" : ""} data de nascimento?
+					</label>
 					<input
 						className={styles.text_input}
 						type="date"
@@ -226,7 +233,9 @@ export function Cadastro(props) {
 					/>
 				</div>
 				<div className={styles.input_group}>
-					<label htmlFor="country">{isEdit ? "Edite" : "Qual"} o seu gênero?</label>
+					<label htmlFor="country">
+						{isEdit ? "Edite" : "Qual"} o seu gênero?
+					</label>
 					<div className={styles.options}>
 						<span>
 							<input
@@ -260,7 +269,7 @@ export function Cadastro(props) {
 						</span>
 					</div>
 				</div>
-				{!isEdit &&
+				{!isEdit && (
 					<div className={styles.checkbox_group}>
 						<div className={styles.checkbox}>
 							<input
@@ -301,14 +310,14 @@ export function Cadastro(props) {
 							</label>
 						</div>
 					</div>
-				}
-				{!isEdit &&
+				)}
+				{!isEdit && (
 					<p className={styles.terms}>
 						Para saber mais sobre como o Spotify coleta, utiliza, compartilha e
 						protege seus dados pessoais, leia a
 						<span>Política de Privacidade do Spotify</span>.
 					</p>
-				}
+				)}
 				{msg !== "" && (
 					<div className={`${styles[msg.type]}  ${styles.msg}`}>
 						<p>{msg.message}</p>
@@ -317,17 +326,17 @@ export function Cadastro(props) {
 				)}
 				<span className={styles.submit}>
 					<button
-						onClick={() => isEdit ? submitEdit() : handleSubmit()}
+						onClick={() => (isEdit ? submitEdit() : handleSubmit())}
 						className={styles.button}
 						type="submit"
 					>
 						{isEdit ? "Editar" : "Inscrever-se"}
 					</button>
-					{!isEdit &&
+					{!isEdit && (
 						<p>
 							Já tem uma conta?<Link to="/login"> Faça Login</Link>.
 						</p>
-					}
+					)}
 				</span>
 			</div>
 		</div>
