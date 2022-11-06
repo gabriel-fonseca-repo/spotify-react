@@ -10,8 +10,8 @@ export function MainHome() {
 	useEffect(() => {
 		const opcoes = {
 			crossDomain: true,
-			method: "GET", 
-			mode: "cors",	
+			method: "GET",
+			headers: { Accept: "*/*" },
 		};
 
 		fetch(process.env.REACT_APP_URL_API + "/categoria/", opcoes)
@@ -30,13 +30,14 @@ export function MainHome() {
 					<div className={styles.div_loading}>Carregando...</div>
 				) : (
 					<div className={styles.content}>
-						{categorias.length && categorias.map((categoria) => (
-							<PlaylistCardList
-								key={categoria.id}
-								nome={categoria.nome}
-								playlists={categoria.playlists}
-							/>
-						))}
+						{categorias.length &&
+							categorias.map((categoria) => (
+								<PlaylistCardList
+									key={categoria.id}
+									nome={categoria.nome}
+									playlists={categoria.playlists}
+								/>
+							))}
 					</div>
 				)}
 			</main>
