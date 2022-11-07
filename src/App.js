@@ -20,7 +20,7 @@ function App() {
 				<Route path="/criarplaylist" element={<CriarPlaylist />} />
 				<Route path="/criarplaylist/:id" element={<CriarPlaylist />} />
 				<Route path="/biblioteca" element={<Biblioteca />} />
-				<Route path="/editar-cadastro" element={<Cadastro isEdit/>} />
+				<Route path="/editar-cadastro" element={<Cadastro isEdit />} />
 			</Routes>
 		</BrowserRouter>
 	);
